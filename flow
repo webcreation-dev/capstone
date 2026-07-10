@@ -1,0 +1,39 @@
+Ah ! Je comprends mieux. Vous voulez le Scénario de Démonstration (Le Storyboard) pour présenter le projet à un client ou à un jury, étape par étape, pour que tout ait un sens chronologique et logique.
+
+C'est effectivement la meilleure façon de présenter l'application. Voici exactement le "Flow" de A à Z, qui traverse nos 25 pages de façon fluide et réaliste :
+
+🎬 ACTE 1 : La Planification (L'Administration prépare le terrain)
+spm-dashboard.html : Vous commencez la démo en tant que Spécialiste en Passation des Marchés (SPM). Il regarde ses statistiques globales.
+ppm-list.html : Le SPM va consulter le Plan de Passation des Marchés (PPM).
+ppm-form.html : Il décide de créer un nouveau projet (nouvelle ligne au PPM).
+ami-list.html : Une fois le projet prêt, le SPM publie officiellement l'Avis à Manifestation d'Intérêt (AMI) pour chercher des consultants.
+💼 ACTE 2 : La Candidature (Le Consultant entre en scène)
+consultant-sign-up.html : (Changement de rôle) Un cabinet de consultants découvre l'offre et s'inscrit.
+consultant-login.html : Le consultant se connecte.
+consultant-profile.html : Il met à jour les données de son entreprise (Agréments, employés).
+consultant-opportunities.html : Il consulte la place de marché des AMI publics.
+ami-details.html : Il clique sur l'AMI publié à l'étape 4 pour lire les Termes de Référence.
+candidature-wizard.html : Intéressé, il lance l'assistant (Wizard) et soumet son dossier.
+consultant-applications.html : Il vérifie que sa candidature est bien dans son historique.
+⚖️ ACTE 3 : La Présélection (Retour à l'Administration)
+ami-submissions.html : (Retour au SPM) Le SPM ouvre la liste des candidatures reçues.
+shortlist-analysis.html : Le système l'aide à générer la "Shortlist" (les meilleurs cabinets retenus).
+dp-list.html : Le SPM prépare et envoie la Demande de Propositions (DP) uniquement à cette Shortlist.
+📨 ACTE 4 : La Double Enveloppe (Le Consultant répond)
+dp-submission.html : (Retour au Consultant) Le cabinet, fier d'être présélectionné, revient soumettre sa fameuse "Double Enveloppe" (Il charge son offre Technique en PDF, et son offre Financière chiffrée de l'autre côté).
+🎓 ACTE 5 : L'Évaluation Technique (Les Experts notent)
+tech-eval-monitoring.html : (Le SPM) L'Admin lance l'évaluation et forme un comité d'experts.
+expert-dashboard.html : (Changement de rôle) Un Expert indépendant se connecte.
+expert-dossiers.html : L'Expert voit les offres techniques (et uniquement techniques) qu'on lui a assignées.
+expert-evaluation.html : L'Expert ouvre un dossier. Il lit le PDF à gauche et remplit sa grille de notation à droite.
+expert-summary.html : L'Expert termine son travail, vérifie ses notes, et clique sur "Soumettre à l'UGP".
+🏆 ACTE 6 : L'Ouverture Financière et le Choix Final (L'Admin)
+financial-opening.html : (Retour au SPM) L'Admin constate que l'évaluation technique est finie. Il clique pour "Casser le cadenas" et ouvrir les offres financières des candidats ayant eu la moyenne.
+final-ranking.html : Le système calcule la note combinée (ex: 80% Tech / 20% Fin) et affiche le grand Classement Final. Le cabinet gagnant est désigné !
+🏦 ACTE 7 : La Validation du Bailleur (La BAD donne son feu vert)
+bad-dashboard.html : (Changement de rôle final) Le superviseur de la Banque se connecte.
+bad-review-list.html : Il voit que l'UGP lui a envoyé le "Rapport d'évaluation final" pour demander l'Avis de Non-Objection (ANO).
+bad-review-detail.html : Le banquier lit le résumé, trouve la procédure parfaite, et clique sur le bouton vert "Accorder l'Avis de Non-Objection" !
+FIN DE LA DÉMO. 🎉
+
+Est-ce que cette trame narrative vous convient ? Elle exploite nos 25 pages de façon ultra-logique et montre toute la puissance de votre système SIGSC.
