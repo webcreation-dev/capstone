@@ -1858,6 +1858,338 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                             </div>
                         </div>
                         <!--End of Notifications Drawer-->
+
+                        <!--Date Details Drawer-->
+                        <div class="hidden kt-drawer kt-drawer-start card flex-col max-w-[90%] w-[450px] top-5 bottom-5 start-5 rounded-xl border border-border"
+                            data-kt-drawer="true" data-kt-drawer-container="body" id="date_details_drawer">
+                            <div class="flex items-center justify-between gap-2.5 text-sm text-mono font-semibold px-5 py-2.5 border-b border-b-border"
+                                id="date_details_header">
+                                Détails de la Date
+                                <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-dim shrink-0"
+                                    data-kt-drawer-dismiss="true">
+                                    <i class="ki-filled ki-cross">
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="kt-tabs kt-tabs-line justify-between px-5 mb-2" data-kt-tabs="true"
+                                id="date_details_tabs">
+                                <div class="flex items-center gap-5">
+                                    <button class="kt-tab-toggle py-3 active"
+                                        data-kt-tab-toggle="#date_details_tab_comments">
+                                        Commentaires
+                                    </button>
+                                    <button class="kt-tab-toggle py-3"
+                                        data-kt-tab-toggle="#date_details_tab_documents">
+                                        Documents
+                                    </button>
+                                </div>
+                                <div class="kt-menu" data-kt-menu="true">
+                                    <div class="kt-menu-item" data-kt-menu-item-offset="0,10px"
+                                        data-kt-menu-item-placement="bottom-end"
+                                        data-kt-menu-item-placement-rtl="bottom-start"
+                                        data-kt-menu-item-toggle="dropdown" data-kt-menu-item-trigger="click|lg:hover">
+                                        <button class="kt-menu-toggle kt-btn kt-btn-icon kt-btn-ghost">
+                                            <i class="ki-filled ki-setting-2">
+                                            </i>
+                                        </button>
+                                        <div class="kt-menu-dropdown kt-menu-default w-full max-w-[175px]"
+                                            data-kt-menu-dismiss="true">
+                                            <div class="kt-menu-item">
+                                                <a class="kt-menu-link" href="#">
+                                                    <span class="kt-menu-icon">
+                                                        <i class="ki-filled ki-document">
+                                                        </i>
+                                                    </span>
+                                                    <span class="kt-menu-title">
+                                                        Voir
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="kt-menu-item">
+                                                <a class="kt-menu-link" href="#">
+                                                    <span class="kt-menu-icon">
+                                                        <i class="ki-filled ki-pencil">
+                                                        </i>
+                                                    </span>
+                                                    <span class="kt-menu-title">
+                                                        Éditer
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="kt-menu-item">
+                                                <a class="kt-menu-link" href="#">
+                                                    <span class="kt-menu-icon">
+                                                        <i class="ki-filled ki-trash">
+                                                        </i>
+                                                    </span>
+                                                    <span class="kt-menu-title">
+                                                        Supprimer
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Tab Commentaires -->
+                            <div class="grow flex flex-col" id="date_details_tab_comments">
+                                <div class="grow kt-scrollable-y-auto" data-kt-scrollable="true"
+                                    data-kt-scrollable-dependencies="#header" data-kt-scrollable-max-height="auto"
+                                    data-kt-scrollable-offset="150px">
+                                    <div class="grow flex flex-col gap-5 pt-3 pb-4 divider-y divider-border">
+                                        <!-- Bloc Contexte -->
+                                        <div class="px-5">
+                                            <div class="bg-light/50 p-4 rounded-lg border border-border">
+                                                <div class="text-sm font-semibold text-secondary-foreground mb-1">
+                                                    SPM-TRVX-1 > T-01 > Révisé 2
+                                                </div>
+                                                <div class="text-xs text-muted-foreground">
+                                                    Date de soumission : 03 Juillet 2027
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="border-b border-b-border"></div>
+
+                                        <!-- Commentaire 1 -->
+                                        <div class="flex grow gap-2.5 px-5">
+                                            <div class="kt-avatar size-8">
+                                                <div class="kt-avatar-image">
+                                                    <img alt="avatar" src="assets/media/avatars/300-4.png" />
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col gap-2 grow">
+                                                <div class="flex flex-col gap-1">
+                                                    <div class="text-sm font-medium">
+                                                        <a class="hover:text-primary text-mono font-semibold" href="#">
+                                                            Jean Dupont
+                                                        </a>
+                                                        <span class="text-secondary-foreground">
+                                                            a ajouté un commentaire
+                                                        </span>
+                                                    </div>
+                                                    <span class="flex items-center text-xs font-medium text-muted-foreground">
+                                                        03 Juil 2027, 14:30
+                                                    </span>
+                                                </div>
+                                                <div class="text-sm text-secondary-foreground">
+                                                    Date de soumission effectuée avec succès. Le dossier a été déposé auprès de la commission d'appel d'offres.
+                                                </div>
+                                                <div class="flex gap-2">
+                                                    <button class="kt-btn kt-btn-ghost kt-btn-sm text-xs">
+                                                        <i class="ki-filled ki-pencil text-xs"></i>
+                                                        Modifier
+                                                    </button>
+                                                    <button class="kt-btn kt-btn-ghost kt-btn-sm text-xs text-danger">
+                                                        <i class="ki-filled ki-trash text-xs"></i>
+                                                        Supprimer
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="border-b border-b-border"></div>
+
+                                        <!-- Commentaire 2 -->
+                                        <div class="flex grow gap-2.5 px-5">
+                                            <div class="kt-avatar size-8">
+                                                <div class="kt-avatar-image">
+                                                    <img alt="avatar" src="assets/media/avatars/300-5.png" />
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col gap-2 grow">
+                                                <div class="flex flex-col gap-1">
+                                                    <div class="text-sm font-medium">
+                                                        <a class="hover:text-primary text-mono font-semibold" href="#">
+                                                            Marie Lambert
+                                                        </a>
+                                                        <span class="text-secondary-foreground">
+                                                            a ajouté un commentaire
+                                                        </span>
+                                                    </div>
+                                                    <span class="flex items-center text-xs font-medium text-muted-foreground">
+                                                        03 Juil 2027, 16:45
+                                                    </span>
+                                                </div>
+                                                <div class="text-sm text-secondary-foreground">
+                                                    Confirmation reçue de l'administration. Le dossier est complet et conforme aux exigences.
+                                                </div>
+                                                <div class="flex gap-2">
+                                                    <button class="kt-btn kt-btn-ghost kt-btn-sm text-xs">
+                                                        <i class="ki-filled ki-pencil text-xs"></i>
+                                                        Modifier
+                                                    </button>
+                                                    <button class="kt-btn kt-btn-ghost kt-btn-sm text-xs text-danger">
+                                                        <i class="ki-filled ki-trash text-xs"></i>
+                                                        Supprimer
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="border-b border-b-border"></div>
+
+                                        <!-- Formulaire ajout commentaire -->
+                                        <div class="px-5">
+                                            <div class="text-sm font-semibold mb-3">Ajouter un commentaire</div>
+                                            <div class="kt-input mb-3">
+                                                <textarea class="w-full" placeholder="Écrivez votre commentaire..." rows="3"></textarea>
+                                            </div>
+                                            <button class="kt-btn kt-btn-primary kt-btn-sm">
+                                                <i class="ki-filled ki-check"></i>
+                                                Publier
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-b border-b-border"></div>
+                                <div class="grid grid-cols-2 p-5 gap-2.5" id="date_details_comments_footer">
+                                    <button class="kt-btn kt-btn-outline justify-center">
+                                        Tout supprimer
+                                    </button>
+                                    <button class="kt-btn kt-btn-outline justify-center">
+                                        Exporter
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Tab Documents -->
+                            <div class="grow flex flex-col hidden" id="date_details_tab_documents">
+                                <div class="grow kt-scrollable-y-auto" data-kt-scrollable="true"
+                                    data-kt-scrollable-dependencies="#header" data-kt-scrollable-max-height="auto"
+                                    data-kt-scrollable-offset="150px">
+                                    <div class="flex flex-col gap-5 pt-3 pb-4">
+                                        <!-- Bloc Contexte -->
+                                        <div class="px-5">
+                                            <div class="bg-light/50 p-4 rounded-lg border border-border">
+                                                <div class="text-sm font-semibold text-secondary-foreground mb-1">
+                                                    SPM-TRVX-1 > T-01 > Révisé 2
+                                                </div>
+                                                <div class="text-xs text-muted-foreground">
+                                                    Date de soumission : 03 Juillet 2027
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Zone d'upload -->
+                                        <div class="px-5">
+                                            <div class="kt-card shadow-none p-4 rounded-lg bg-muted/70 border-2 border-dashed border-border">
+                                                <div class="flex flex-col items-center gap-2 text-center">
+                                                    <i class="ki-filled ki-file-up text-3xl text-primary"></i>
+                                                    <div class="text-sm font-semibold">Glisser-déposer ou cliquer pour uploader</div>
+                                                    <div class="text-xs text-muted-foreground">PDF, Word, Excel, Images (max 10MB)</div>
+                                                    <input type="file" class="hidden" id="file_upload_input" multiple />
+                                                    <button class="kt-btn kt-btn-outline kt-btn-sm mt-2" onclick="document.getElementById('file_upload_input').click()">
+                                                        Parcourir
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="border-b border-b-border"></div>
+
+                                        <!-- Document 1 -->
+                                        <div class="flex grow gap-2.5 px-5">
+                                            <div class="kt-avatar size-10">
+                                                <img class="h-10" src="assets/media/file-types/pdf.svg" />
+                                            </div>
+                                            <div class="flex flex-col gap-1 grow">
+                                                <div class="flex items-center justify-between">
+                                                    <a class="hover:text-primary font-medium text-secondary-foreground text-sm" href="#">
+                                                        justification_soumission.pdf
+                                                    </a>
+                                                    <div class="flex gap-1">
+                                                        <button class="kt-btn kt-btn-ghost kt-btn-icon kt-btn-sm">
+                                                            <i class="ki-filled ki-download"></i>
+                                                        </button>
+                                                        <button class="kt-btn kt-btn-ghost kt-btn-icon kt-btn-sm text-danger">
+                                                            <i class="ki-filled ki-trash"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-center gap-2 text-xs text-muted-foreground">
+                                                    <span>2.3 MB</span>
+                                                    <span class="rounded-full size-1 bg-mono/30"></span>
+                                                    <span>Ajouté par Jean Dupont</span>
+                                                    <span class="rounded-full size-1 bg-mono/30"></span>
+                                                    <span>03 Juil 2027, 14:35</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="border-b border-b-border"></div>
+
+                                        <!-- Document 2 -->
+                                        <div class="flex grow gap-2.5 px-5">
+                                            <div class="kt-avatar size-10">
+                                                <img class="h-10" src="assets/media/file-types/word.svg" />
+                                            </div>
+                                            <div class="flex flex-col gap-1 grow">
+                                                <div class="flex items-center justify-between">
+                                                    <a class="hover:text-primary font-medium text-secondary-foreground text-sm" href="#">
+                                                        rapport_technique.docx
+                                                    </a>
+                                                    <div class="flex gap-1">
+                                                        <button class="kt-btn kt-btn-ghost kt-btn-icon kt-btn-sm">
+                                                            <i class="ki-filled ki-download"></i>
+                                                        </button>
+                                                        <button class="kt-btn kt-btn-ghost kt-btn-icon kt-btn-sm text-danger">
+                                                            <i class="ki-filled ki-trash"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-center gap-2 text-xs text-muted-foreground">
+                                                    <span>1.8 MB</span>
+                                                    <span class="rounded-full size-1 bg-mono/30"></span>
+                                                    <span>Ajouté par Marie Lambert</span>
+                                                    <span class="rounded-full size-1 bg-mono/30"></span>
+                                                    <span>03 Juil 2027, 16:50</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="border-b border-b-border"></div>
+
+                                        <!-- Document 3 -->
+                                        <div class="flex grow gap-2.5 px-5">
+                                            <div class="kt-avatar size-10">
+                                                <img class="h-10" src="assets/media/file-types/xls.svg" />
+                                            </div>
+                                            <div class="flex flex-col gap-1 grow">
+                                                <div class="flex items-center justify-between">
+                                                    <a class="hover:text-primary font-medium text-secondary-foreground text-sm" href="#">
+                                                        budget_previsionnel.xlsx
+                                                    </a>
+                                                    <div class="flex gap-1">
+                                                        <button class="kt-btn kt-btn-ghost kt-btn-icon kt-btn-sm">
+                                                            <i class="ki-filled ki-download"></i>
+                                                        </button>
+                                                        <button class="kt-btn kt-btn-ghost kt-btn-icon kt-btn-sm text-danger">
+                                                            <i class="ki-filled ki-trash"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-center gap-2 text-xs text-muted-foreground">
+                                                    <span>856 KB</span>
+                                                    <span class="rounded-full size-1 bg-mono/30"></span>
+                                                    <span>Ajouté par Jean Dupont</span>
+                                                    <span class="rounded-full size-1 bg-mono/30"></span>
+                                                    <span>04 Juil 2027, 09:15</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-b border-b-border"></div>
+                                <div class="grid grid-cols-2 p-5 gap-2.5" id="date_details_documents_footer">
+                                    <button class="kt-btn kt-btn-outline justify-center">
+                                        Télécharger tout
+                                    </button>
+                                    <button class="kt-btn kt-btn-outline justify-center">
+                                        Tout supprimer
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End of Date Details Drawer-->
+
                         <!-- End of Notifications -->
                         <!-- Chat -->
                         <button
@@ -2712,7 +3044,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             <th class="min-w-[150px]">Mode de passation</th>
                                             <th class="min-w-[150px]">Type de Qualification</th>
                                             <th class="min-w-[150px]">Contrôle et Audit</th>
-                                            <th class="min-w-[150px] border-r">Examen de la banque</th>
+                                            <th class="min-w-[150px] border-r">Type de Suivi</th>
 
                                             <th class="min-w-[150px]">Date de soumission</th>
                                             <th class="min-w-[150px]">Date d'Avis (NO)</th>
@@ -2726,12 +3058,13 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <!-- SPM 1 -->
-                                        <tr class="group hover:bg-light/50 relative">
+                                        <!-- SPM 1 - TRVX-1 -->
+                                        <!-- Lot 1 - Ligne 1 : Plan -->
+                                        <tr class="group hover:bg-light/50 relative border-b border-gray-200">
                                             <!-- Actions au hover -->
                                             <div class="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity flex gap-1 bg-white shadow-lg rounded-lg p-1 z-[40] border border-border">
-                                                <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-light" title="Ajouter un lot" data-kt-modal-toggle="#modal_add_spm">
-                                                    <i class="ki-filled ki-plus-circle text-primary"></i>
+                                                <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-light" title="Ajouter une révision">
+                                                    <i class="ki-filled ki-plus-circle text-warning"></i>
                                                 </button>
                                                 <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-light" title="Modifier SPM" data-kt-modal-toggle="#modal_add_spm">
                                                     <i class="ki-filled ki-pencil text-info"></i>
@@ -2740,62 +3073,278 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                                     <i class="ki-filled ki-trash text-danger"></i>
                                                 </button>
                                             </div>
-                                            <td class="sticky left-0 bg-white group-hover:bg-light/50 z-[14] font-bold text-sm border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]" rowspan="2">SPM-TRVX-1</td>
-                                            <td class="sticky left-[150px] bg-white group-hover:bg-light/50 z-[13] font-bold border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]" rowspan="2">T-01</td>
-                                            <td class="sticky left-[250px] bg-white group-hover:bg-light/50 z-[12] font-medium border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]" rowspan="2">Travaux de construction du tronçon Djougou-Pehunco</td>
 
-                                            <!-- Lot 1 -->
-                                            <td class="sticky left-[450px] bg-white group-hover:bg-light/50 z-[11] border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]">Lot 1</td>
-                                            <td class="sticky left-[530px] bg-white group-hover:bg-light/50 z-10 border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]">Section A (0-50km)</td>
+                                            <!-- Colonnes sticky avec rowspan pour tout le SPM -->
+                                            <td class="sticky left-0 bg-white group-hover:bg-light/50 z-[14] font-bold text-sm border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]" rowspan="7">SPM-TRVX-1</td>
+                                            <td class="sticky left-[150px] bg-white group-hover:bg-light/50 z-[13] font-bold border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]" rowspan="7">T-01</td>
+                                            <td class="sticky left-[250px] bg-white group-hover:bg-light/50 z-[12] font-medium border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]" rowspan="7">Travaux de construction du tronçon Djougou-Pehunco</td>
 
-                                            <!-- 7 nouvelles colonnes -->
+                                            <!-- Lot 1 avec rowspan pour toutes ses lignes de suivi -->
+                                            <td class="sticky left-[450px] bg-white group-hover:bg-light/50 z-[11] border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]" rowspan="4">Lot 1</td>
+                                            <td class="sticky left-[530px] bg-white group-hover:bg-light/50 z-10 border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]" rowspan="4">Section A (0-50km)</td>
+
+                                            <!-- 6 colonnes techniques -->
                                             <td class="text-muted-foreground">-</td>
                                             <td class="text-muted-foreground">-</td>
                                             <td class="text-muted-foreground">-</td>
                                             <td><span class="kt-badge kt-badge-light-primary">AOO</span></td>
                                             <td class="text-muted-foreground">-</td>
                                             <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground border-r">-</td>
 
-                                            <td class="cursor-pointer hover:bg-light toggle-timeline"
-                                                class="toggle-timeline">
-                                                <div>02 Juin 2026</div>
-                                                <span
-                                                    class="kt-badge kt-badge-sm kt-badge-light-success mt-1">Réel</span>
-                                            </td>
-                                            <td class="cursor-pointer hover:bg-light toggle-timeline"
-                                                class="toggle-timeline">
-                                                <div>15 Juin 2026</div>
-                                                <span
-                                                    class="kt-badge kt-badge-sm kt-badge-light-warning mt-1">Révisé</span>
-                                                <i class="ki-filled ki-message-text-2 text-primary ml-1 text-xs"
-                                                    title="Commentaire attaché"></i>
+                                            <!-- Colonne Type de Suivi -->
+                                            <td class="border-r">
+                                                <div class="flex items-center gap-2">
+                                                    <i class="ki-filled ki-calendar text-gray-400"></i>
+                                                    <span class="kt-badge kt-badge-sm kt-badge-light">Plan</span>
+                                                </div>
                                             </td>
 
-                                            <td class="cursor-pointer hover:bg-light toggle-timeline">
-                                                <div>01 Juil 2026</div>
-                                                <span
-                                                    class="kt-badge kt-badge-sm kt-badge-light mt-1 text-muted-foreground">Plan</span>
-                                            </td>
-                                            <td class="cursor-pointer hover:bg-light toggle-timeline">
-                                                <div>15 Juil 2026</div>
-                                                <span
-                                                    class="kt-badge kt-badge-sm kt-badge-light mt-1 text-muted-foreground">Plan</span>
+                                            <!-- Date de soumission -->
+                                            <td class="p-2">
+                                                <div class="flex items-center justify-between gap-2">
+                                                    <div class="flex flex-col">
+                                                        <span class="text-sm">02 Juin 2026</span>
+                                                        <span class="kt-badge kt-badge-xs kt-badge-light text-gray-500">Prévisionnel</span>
+                                                    </div>
+                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                            title="Gérer commentaires et fichiers"
+                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                        <i class="ki-filled ki-message-edit text-xs"></i>
+                                                    </button>
+                                                </div>
                                             </td>
 
-                                            <td class="cursor-pointer hover:bg-light toggle-timeline">
-                                                <div>-</div>
+                                            <!-- Date d'Avis NO -->
+                                            <td class="p-2">
+                                                <div class="flex items-center justify-between gap-2">
+                                                    <div class="flex flex-col">
+                                                        <span class="text-sm">15 Juin 2026</span>
+                                                        <span class="kt-badge kt-badge-xs kt-badge-light text-gray-500">Prévisionnel</span>
+                                                    </div>
+                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                            title="Gérer commentaires et fichiers"
+                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                        <i class="ki-filled ki-message-edit text-xs"></i>
+                                                    </button>
+                                                </div>
                                             </td>
-                                            <td class="cursor-pointer hover:bg-light toggle-timeline">
-                                                <div>-</div>
+
+                                            <!-- Date d'Ouverture -->
+                                            <td class="p-2">
+                                                <div class="flex items-center justify-between gap-2">
+                                                    <div class="flex flex-col">
+                                                        <span class="text-sm">01 Juil 2026</span>
+                                                        <span class="kt-badge kt-badge-xs kt-badge-light text-gray-500">Prévisionnel</span>
+                                                    </div>
+                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                            title="Gérer commentaires et fichiers"
+                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                        <i class="ki-filled ki-message-edit text-xs"></i>
+                                                    </button>
+                                                </div>
                                             </td>
-                                            <td class="border-r font-medium">12.500.000.000</td>
+
+                                            <!-- Rapport d'évaluation -->
+                                            <td class="p-2">
+                                                <div class="flex items-center justify-between gap-2">
+                                                    <div class="flex flex-col">
+                                                        <span class="text-sm">15 Juil 2026</span>
+                                                        <span class="kt-badge kt-badge-xs kt-badge-light text-gray-500">Prévisionnel</span>
+                                                    </div>
+                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                            title="Gérer commentaires et fichiers"
+                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                        <i class="ki-filled ki-message-edit text-xs"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="border-r font-medium" rowspan="4">12.500.000.000</td>
                                         </tr>
 
-                                        <!-- SPM 1 - Lot 2 -->
-                                        <tr class="group hover:bg-light/50 relative">
+                                        <!-- Lot 1 - Ligne 2 : Révisé 1 -->
+                                        <tr class="group hover:bg-light/50 relative border-b border-gray-200">
+                                            <!-- 6 colonnes techniques -->
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td><span class="kt-badge kt-badge-light-primary">AOO</span></td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+
+                                            <!-- Colonne Type de Suivi -->
+                                            <td class="border-r">
+                                                <div class="flex items-center gap-2">
+                                                    <i class="ki-filled ki-time text-warning"></i>
+                                                    <span class="kt-badge kt-badge-sm kt-badge-warning">Révisé 1</span>
+                                                </div>
+                                            </td>
+
+                                            <!-- Date de soumission révisée -->
+                                            <td class="p-2">
+                                                <div class="flex items-center justify-between gap-2">
+                                                    <div class="flex flex-col">
+                                                        <span class="text-sm">03 Juil 2027</span>
+                                                        <span class="kt-badge kt-badge-xs kt-badge-light text-gray-500">Prévisionnel</span>
+                                                    </div>
+                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                            title="Gérer commentaires et fichiers"
+                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                        <i class="ki-filled ki-message-edit text-xs"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+
+                                            <!-- Date d'Avis NO révisée -->
+                                            <td class="p-2">
+                                                <div class="flex items-center justify-between gap-2">
+                                                    <div class="flex flex-col">
+                                                        <span class="text-sm">20 Août 2027</span>
+                                                        <span class="kt-badge kt-badge-xs kt-badge-light text-gray-500">Prévisionnel</span>
+                                                    </div>
+                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100 has-comment"
+                                                            title="1 commentaire"
+                                                            data-kt-modal-toggle="#modal_view_comment">
+                                                        <i class="ki-filled ki-message-text text-xs text-primary"></i>
+                                                        <span class="absolute -top-1 -right-1 w-3 h-3 bg-primary rounded-full text-[8px] text-white flex items-center justify-center">1</span>
+                                                    </button>
+                                                </div>
+                                            </td>
+
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                        </tr>
+
+                                        <!-- Lot 1 - Ligne 3 : Révisé 2 (avec date réelle) -->
+                                        <tr class="group hover:bg-light/50 relative border-b border-gray-200">
+                                            <!-- 6 colonnes techniques -->
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td><span class="kt-badge kt-badge-light-primary">AOO</span></td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+
+                                            <!-- Colonne Type de Suivi -->
+                                            <td class="border-r">
+                                                <div class="flex items-center gap-2">
+                                                    <i class="ki-filled ki-time text-warning"></i>
+                                                    <span class="kt-badge kt-badge-sm kt-badge-warning">Révisé 2</span>
+                                                </div>
+                                            </td>
+
+                                            <!-- Date de soumission RÉELLE -->
+                                            <td class="p-2 bg-green-50/30">
+                                                <div class="flex items-center justify-between gap-2">
+                                                    <div class="flex flex-col">
+                                                        <span class="text-sm font-medium text-green-700">03 Juil 2027</span>
+                                                        <div class="flex items-center gap-1 mt-1">
+                                                            <i class="ki-filled ki-check-circle text-success text-xs"></i>
+                                                            <span class="kt-badge kt-badge-xs kt-badge-success">RÉEL</span>
+                                                        </div>
+                                                    </div>
+                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100 has-comment"
+                                                            title="1 commentaire, 1 fichier"
+                                                            data-kt-modal-toggle="#modal_view_comment">
+                                                        <i class="ki-filled ki-message-text text-xs text-primary"></i>
+                                                        <span class="absolute -top-1 -right-1 w-3 h-3 bg-primary rounded-full text-[8px] text-white flex items-center justify-center">2</span>
+                                                    </button>
+                                                </div>
+                                            </td>
+
+                                            <!-- Date d'Avis NO révisée -->
+                                            <td class="p-2">
+                                                <div class="flex items-center justify-between gap-2">
+                                                    <div class="flex flex-col">
+                                                        <span class="text-sm">21 Août 2027</span>
+                                                        <span class="kt-badge kt-badge-xs kt-badge-light text-gray-500">Prévisionnel</span>
+                                                    </div>
+                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                            title="Gérer commentaires et fichiers"
+                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                        <i class="ki-filled ki-message-edit text-xs"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                        </tr>
+
+                                        <!-- Lot 1 - Ligne 4 : Révisé 3 -->
+                                        <tr class="group hover:bg-light/50 relative border-b border-gray-200">
+                                            <!-- 6 colonnes techniques -->
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td><span class="kt-badge kt-badge-light-primary">AOO</span></td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+
+                                            <!-- Colonne Type de Suivi -->
+                                            <td class="border-r">
+                                                <div class="flex items-center gap-2">
+                                                    <i class="ki-filled ki-time text-warning"></i>
+                                                    <span class="kt-badge kt-badge-sm kt-badge-warning">Révisé 3</span>
+                                                </div>
+                                            </td>
+
+                                            <!-- Date de soumission RÉELLE -->
+                                            <td class="p-2 bg-green-50/30">
+                                                <div class="flex items-center justify-between gap-2">
+                                                    <div class="flex flex-col">
+                                                        <span class="text-sm font-medium text-green-700">03 Juil 2027</span>
+                                                        <div class="flex items-center gap-1 mt-1">
+                                                            <i class="ki-filled ki-check-circle text-success text-xs"></i>
+                                                            <span class="kt-badge kt-badge-xs kt-badge-success">RÉEL</span>
+                                                        </div>
+                                                    </div>
+                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100 has-comment"
+                                                            title="1 commentaire, 1 fichier"
+                                                            data-kt-modal-toggle="#modal_view_comment">
+                                                        <i class="ki-filled ki-message-text text-xs text-primary"></i>
+                                                        <span class="absolute -top-1 -right-1 w-3 h-3 bg-primary rounded-full text-[8px] text-white flex items-center justify-center">2</span>
+                                                    </button>
+                                                </div>
+                                            </td>
+
+                                            <!-- Date d'Avis NO RÉELLE -->
+                                            <td class="p-2 bg-green-50/30">
+                                                <div class="flex items-center justify-between gap-2">
+                                                    <div class="flex flex-col">
+                                                        <span class="text-sm font-medium text-green-700">21 Août 2027</span>
+                                                        <div class="flex items-center gap-1 mt-1">
+                                                            <i class="ki-filled ki-check-circle text-success text-xs"></i>
+                                                            <span class="kt-badge kt-badge-xs kt-badge-success">RÉEL</span>
+                                                        </div>
+                                                    </div>
+                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                            title="Gérer commentaires et fichiers"
+                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                        <i class="ki-filled ki-message-edit text-xs"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                        </tr>
+
+                                        <!-- Lot 2 - Ligne 1 : Plan -->
+                                        <tr class="group hover:bg-light/50 relative border-b border-gray-200">
                                             <!-- Actions au hover pour lot -->
                                             <div class="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity flex gap-1 bg-white shadow-lg rounded-lg p-1 z-[40] border border-border">
+                                                <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-light" title="Ajouter une révision">
+                                                    <i class="ki-filled ki-plus-circle text-warning"></i>
+                                                </button>
                                                 <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-light" title="Modifier ce lot">
                                                     <i class="ki-filled ki-pencil text-info"></i>
                                                 </button>
@@ -2803,57 +3352,209 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                                     <i class="ki-filled ki-trash text-danger"></i>
                                                 </button>
                                             </div>
-                                            <td class="sticky left-[450px] bg-white group-hover:bg-light/50 z-[11] border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]">Lot 2</td>
-                                            <td class="sticky left-[530px] bg-white group-hover:bg-light/50 z-10 border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]">Section B (50-100km)</td>
 
-                                            <!-- 7 nouvelles colonnes -->
+                                            <td class="sticky left-[450px] bg-white group-hover:bg-light/50 z-[11] border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]" rowspan="3">Lot 2</td>
+                                            <td class="sticky left-[530px] bg-white group-hover:bg-light/50 z-10 border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]" rowspan="3">Section B (50-100km)</td>
+
+                                            <!-- 6 colonnes techniques -->
                                             <td class="text-muted-foreground">-</td>
                                             <td class="text-muted-foreground">-</td>
                                             <td class="text-muted-foreground">-</td>
                                             <td><span class="kt-badge kt-badge-light-primary">AOO</span></td>
                                             <td class="text-muted-foreground">-</td>
                                             <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground border-r">-</td>
 
-                                            <td class="cursor-pointer hover:bg-light toggle-timeline"
-                                                class="toggle-timeline">
-                                                <div>02 Juin 2026</div>
-                                                <span
-                                                    class="kt-badge kt-badge-sm kt-badge-light-success mt-1">Réel</span>
-                                            </td>
-                                            <td class="cursor-pointer hover:bg-light toggle-timeline"
-                                                class="toggle-timeline">
-                                                <div>15 Juin 2026</div>
-                                                <span
-                                                    class="kt-badge kt-badge-sm kt-badge-light-warning mt-1">Révisé</span>
+                                            <!-- Colonne Type de Suivi -->
+                                            <td class="border-r">
+                                                <div class="flex items-center gap-2">
+                                                    <i class="ki-filled ki-calendar text-gray-400"></i>
+                                                    <span class="kt-badge kt-badge-sm kt-badge-light">Plan</span>
+                                                </div>
                                             </td>
 
-                                            <td class="cursor-pointer hover:bg-light toggle-timeline">
-                                                <div>01 Juil 2026</div>
-                                                <span
-                                                    class="kt-badge kt-badge-sm kt-badge-light mt-1 text-muted-foreground">Plan</span>
-                                            </td>
-                                            <td class="cursor-pointer hover:bg-light toggle-timeline">
-                                                <div>15 Juil 2026</div>
-                                                <span
-                                                    class="kt-badge kt-badge-sm kt-badge-light mt-1 text-muted-foreground">Plan</span>
+                                            <!-- Date de soumission -->
+                                            <td class="p-2">
+                                                <div class="flex items-center justify-between gap-2">
+                                                    <div class="flex flex-col">
+                                                        <span class="text-sm">02 Juin 2026</span>
+                                                        <span class="kt-badge kt-badge-xs kt-badge-light text-gray-500">Prévisionnel</span>
+                                                    </div>
+                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                            title="Gérer commentaires et fichiers"
+                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                        <i class="ki-filled ki-message-edit text-xs"></i>
+                                                    </button>
+                                                </div>
                                             </td>
 
-                                            <td class="cursor-pointer hover:bg-light toggle-timeline">
-                                                <div>-</div>
+                                            <!-- Date d'Avis NO -->
+                                            <td class="p-2">
+                                                <div class="flex items-center justify-between gap-2">
+                                                    <div class="flex flex-col">
+                                                        <span class="text-sm">15 Juin 2026</span>
+                                                        <span class="kt-badge kt-badge-xs kt-badge-light text-gray-500">Prévisionnel</span>
+                                                    </div>
+                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                            title="Gérer commentaires et fichiers"
+                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                        <i class="ki-filled ki-message-edit text-xs"></i>
+                                                    </button>
+                                                </div>
                                             </td>
-                                            <td class="cursor-pointer hover:bg-light toggle-timeline">
-                                                <div>-</div>
+
+                                            <!-- Date d'Ouverture -->
+                                            <td class="p-2">
+                                                <div class="flex items-center justify-between gap-2">
+                                                    <div class="flex flex-col">
+                                                        <span class="text-sm">01 Juil 2026</span>
+                                                        <span class="kt-badge kt-badge-xs kt-badge-light text-gray-500">Prévisionnel</span>
+                                                    </div>
+                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                            title="Gérer commentaires et fichiers"
+                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                        <i class="ki-filled ki-message-edit text-xs"></i>
+                                                    </button>
+                                                </div>
                                             </td>
-                                            <td class="border-r font-medium">15.200.000.000</td>
+
+                                            <!-- Rapport d'évaluation -->
+                                            <td class="p-2">
+                                                <div class="flex items-center justify-between gap-2">
+                                                    <div class="flex flex-col">
+                                                        <span class="text-sm">15 Juil 2026</span>
+                                                        <span class="kt-badge kt-badge-xs kt-badge-light text-gray-500">Prévisionnel</span>
+                                                    </div>
+                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                            title="Gérer commentaires et fichiers"
+                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                        <i class="ki-filled ki-message-edit text-xs"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="border-r font-medium" rowspan="3">15.200.000.000</td>
                                         </tr>
 
-                                        <!-- SPM 2 -->
-                                        <tr class="group hover:bg-light/50 border-t-2 border-t-gray-200 relative">
+                                        <!-- Lot 2 - Ligne 2 : Révisé 1 -->
+                                        <tr class="group hover:bg-light/50 relative border-b border-gray-200">
+                                            <!-- 6 colonnes techniques -->
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td><span class="kt-badge kt-badge-light-primary">AOO</span></td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+
+                                            <!-- Colonne Type de Suivi -->
+                                            <td class="border-r">
+                                                <div class="flex items-center gap-2">
+                                                    <i class="ki-filled ki-time text-warning"></i>
+                                                    <span class="kt-badge kt-badge-sm kt-badge-warning">Révisé 1</span>
+                                                </div>
+                                            </td>
+
+                                            <!-- Date de soumission révisée -->
+                                            <td class="p-2">
+                                                <div class="flex items-center justify-between gap-2">
+                                                    <div class="flex flex-col">
+                                                        <span class="text-sm">03 Juil 2027</span>
+                                                        <span class="kt-badge kt-badge-xs kt-badge-light text-gray-500">Prévisionnel</span>
+                                                    </div>
+                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                            title="Gérer commentaires et fichiers"
+                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                        <i class="ki-filled ki-message-edit text-xs"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+
+                                            <!-- Date d'Avis NO révisée -->
+                                            <td class="p-2">
+                                                <div class="flex items-center justify-between gap-2">
+                                                    <div class="flex flex-col">
+                                                        <span class="text-sm">20 Août 2027</span>
+                                                        <span class="kt-badge kt-badge-xs kt-badge-light text-gray-500">Prévisionnel</span>
+                                                    </div>
+                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                            title="Gérer commentaires et fichiers"
+                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                        <i class="ki-filled ki-message-edit text-xs"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                        </tr>
+
+                                        <!-- Lot 2 - Ligne 3 : Révisé 2 (dernière ligne du SPM) -->
+                                        <tr class="group hover:bg-light/50 relative border-b-2 border-gray-400">
+                                            <!-- 6 colonnes techniques -->
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td><span class="kt-badge kt-badge-light-primary">AOO</span></td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+
+                                            <!-- Colonne Type de Suivi -->
+                                            <td class="border-r">
+                                                <div class="flex items-center gap-2">
+                                                    <i class="ki-filled ki-time text-warning"></i>
+                                                    <span class="kt-badge kt-badge-sm kt-badge-warning">Révisé 2</span>
+                                                </div>
+                                            </td>
+
+                                            <!-- Date de soumission RÉELLE -->
+                                            <td class="p-2 bg-green-50/30">
+                                                <div class="flex items-center justify-between gap-2">
+                                                    <div class="flex flex-col">
+                                                        <span class="text-sm font-medium text-green-700">03 Juil 2027</span>
+                                                        <div class="flex items-center gap-1 mt-1">
+                                                            <i class="ki-filled ki-check-circle text-success text-xs"></i>
+                                                            <span class="kt-badge kt-badge-xs kt-badge-success">RÉEL</span>
+                                                        </div>
+                                                    </div>
+                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                            title="Gérer commentaires et fichiers"
+                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                        <i class="ki-filled ki-message-edit text-xs"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+
+                                            <!-- Date d'Avis NO -->
+                                            <td class="p-2">
+                                                <div class="flex items-center justify-between gap-2">
+                                                    <div class="flex flex-col">
+                                                        <span class="text-sm">21 Août 2027</span>
+                                                        <span class="kt-badge kt-badge-xs kt-badge-light text-gray-500">Prévisionnel</span>
+                                                    </div>
+                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                            title="Gérer commentaires et fichiers"
+                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                        <i class="ki-filled ki-message-edit text-xs"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                        </tr>
+
+                                        <!-- SPM 2 - BIENS-1 -->
+                                        <!-- Ligne 1 : Plan -->
+                                        <tr class="group hover:bg-light/50 border-t-2 border-t-gray-200 relative border-b border-gray-200">
                                             <!-- Actions au hover -->
                                             <div class="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity flex gap-1 bg-white shadow-lg rounded-lg p-1 z-[40] border border-border">
-                                                <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-light" title="Ajouter un lot" data-kt-modal-toggle="#modal_add_spm">
-                                                    <i class="ki-filled ki-plus-circle text-primary"></i>
+                                                <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-light" title="Ajouter une révision">
+                                                    <i class="ki-filled ki-plus-circle text-warning"></i>
                                                 </button>
                                                 <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-light" title="Modifier SPM" data-kt-modal-toggle="#modal_add_spm">
                                                     <i class="ki-filled ki-pencil text-info"></i>
@@ -2862,44 +3563,132 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                                     <i class="ki-filled ki-trash text-danger"></i>
                                                 </button>
                                             </div>
-                                            <td class="sticky left-0 bg-white group-hover:bg-light/50 z-[14] font-bold text-sm border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]">SPM-BIENS-1</td>
-                                            <td class="sticky left-[150px] bg-white group-hover:bg-light/50 z-[13] font-bold border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]">B-01</td>
-                                            <td class="sticky left-[250px] bg-white group-hover:bg-light/50 z-[12] font-medium border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]">Acquisition de matériel informatique</td>
 
-                                            <td class="sticky left-[450px] bg-white group-hover:bg-light/50 z-[11] border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]">Unique</td>
-                                            <td class="sticky left-[530px] bg-white group-hover:bg-light/50 z-10 border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]">Matériel complet</td>
+                                            <!-- Colonnes sticky avec rowspan -->
+                                            <td class="sticky left-0 bg-white group-hover:bg-light/50 z-[14] font-bold text-sm border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]" rowspan="3">SPM-BIENS-1</td>
+                                            <td class="sticky left-[150px] bg-white group-hover:bg-light/50 z-[13] font-bold border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]" rowspan="3">B-01</td>
+                                            <td class="sticky left-[250px] bg-white group-hover:bg-light/50 z-[12] font-medium border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]" rowspan="3">Acquisition de matériel informatique</td>
+                                            <td class="sticky left-[450px] bg-white group-hover:bg-light/50 z-[11] border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]" rowspan="3">Unique</td>
+                                            <td class="sticky left-[530px] bg-white group-hover:bg-light/50 z-10 border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]" rowspan="3">Matériel complet</td>
 
-                                            <!-- 7 nouvelles colonnes -->
+                                            <!-- 6 colonnes techniques -->
                                             <td class="text-muted-foreground">-</td>
                                             <td class="text-muted-foreground">-</td>
                                             <td class="text-muted-foreground">-</td>
                                             <td><span class="kt-badge kt-badge-light-info">DRP</span></td>
                                             <td class="text-muted-foreground">-</td>
                                             <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground border-r">-</td>
 
-                                            <td class="cursor-pointer hover:bg-light text-danger"
-                                                title="Date dépassée !">
-                                                <div>10 Mai 2026</div>
-                                                <span class="kt-badge kt-badge-sm kt-badge-light-danger mt-1">Plan en
-                                                    retard</span>
+                                            <!-- Colonne Type de Suivi -->
+                                            <td class="border-r">
+                                                <div class="flex items-center gap-2">
+                                                    <i class="ki-filled ki-calendar text-gray-400"></i>
+                                                    <span class="kt-badge kt-badge-sm kt-badge-light">Plan</span>
+                                                </div>
                                             </td>
-                                            <td class="cursor-pointer hover:bg-light toggle-timeline">
-                                                <div>-</div>
+
+                                            <!-- Date de soumission (en retard) -->
+                                            <td class="p-2 bg-red-50/30">
+                                                <div class="flex items-center justify-between gap-2">
+                                                    <div class="flex flex-col">
+                                                        <span class="text-sm text-danger font-medium">10 Mai 2026</span>
+                                                        <span class="kt-badge kt-badge-xs kt-badge-danger mt-1">Plan en retard</span>
+                                                    </div>
+                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                            title="Gérer commentaires et fichiers"
+                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                        <i class="ki-filled ki-message-edit text-xs"></i>
+                                                    </button>
+                                                </div>
                                             </td>
-                                            <td class="cursor-pointer hover:bg-light toggle-timeline">
-                                                <div>-</div>
+
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="border-r font-medium" rowspan="3">45.000.000</td>
+                                        </tr>
+
+                                        <!-- Ligne 2 : Révisé 1 -->
+                                        <tr class="group hover:bg-light/50 relative border-b border-gray-200">
+                                            <!-- 6 colonnes techniques -->
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td><span class="kt-badge kt-badge-light-info">DRP</span></td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+
+                                            <!-- Colonne Type de Suivi -->
+                                            <td class="border-r">
+                                                <div class="flex items-center gap-2">
+                                                    <i class="ki-filled ki-time text-warning"></i>
+                                                    <span class="kt-badge kt-badge-sm kt-badge-warning">Révisé 1</span>
+                                                </div>
                                             </td>
-                                            <td class="cursor-pointer hover:bg-light toggle-timeline">
-                                                <div>-</div>
+
+                                            <!-- Date de soumission révisée -->
+                                            <td class="p-2">
+                                                <div class="flex items-center justify-between gap-2">
+                                                    <div class="flex flex-col">
+                                                        <span class="text-sm">15 Juin 2026</span>
+                                                        <span class="kt-badge kt-badge-xs kt-badge-light text-gray-500">Prévisionnel</span>
+                                                    </div>
+                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100 has-comment"
+                                                            title="1 commentaire"
+                                                            data-kt-modal-toggle="#modal_view_comment">
+                                                        <i class="ki-filled ki-message-text text-xs text-primary"></i>
+                                                        <span class="absolute -top-1 -right-1 w-3 h-3 bg-primary rounded-full text-[8px] text-white flex items-center justify-center">1</span>
+                                                    </button>
+                                                </div>
                                             </td>
-                                            <td class="cursor-pointer hover:bg-light toggle-timeline">
-                                                <div>-</div>
+
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                        </tr>
+
+                                        <!-- Ligne 3 : Révisé 2 (dernière ligne du SPM) -->
+                                        <tr class="group hover:bg-light/50 relative border-b-2 border-gray-400">
+                                            <!-- 6 colonnes techniques -->
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td><span class="kt-badge kt-badge-light-info">DRP</span></td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+
+                                            <!-- Colonne Type de Suivi -->
+                                            <td class="border-r">
+                                                <div class="flex items-center gap-2">
+                                                    <i class="ki-filled ki-time text-warning"></i>
+                                                    <span class="kt-badge kt-badge-sm kt-badge-warning">Révisé 2</span>
+                                                </div>
                                             </td>
-                                            <td class="cursor-pointer hover:bg-light toggle-timeline">
-                                                <div>-</div>
+
+                                            <!-- Date de soumission révisée -->
+                                            <td class="p-2">
+                                                <div class="flex items-center justify-between gap-2">
+                                                    <div class="flex flex-col">
+                                                        <span class="text-sm">20 Juil 2026</span>
+                                                        <span class="kt-badge kt-badge-xs kt-badge-light text-gray-500">Prévisionnel</span>
+                                                    </div>
+                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                            title="Gérer commentaires et fichiers"
+                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                        <i class="ki-filled ki-message-edit text-xs"></i>
+                                                    </button>
+                                                </div>
                                             </td>
-                                            <td class="border-r font-medium">45.000.000</td>
+
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
                                         </tr>
 
                                     </tbody>
@@ -3001,6 +3790,127 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                         <div class="kt-modal-footer flex justify-end gap-2 px-5 py-4 border-t">
                             <button class="kt-btn kt-btn-outline" data-kt-modal-dismiss="true">Annuler</button>
                             <button class="kt-btn kt-btn-primary" data-kt-modal-dismiss="true">Enregistrer</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Add Comment -->
+                <div class="kt-modal" data-kt-modal="true" id="modal_add_comment">
+                    <div class="kt-modal-content max-w-[600px]">
+                        <div class="kt-modal-header px-5 py-4 border-b">
+                            <h3 class="kt-modal-title">Commentaire & Fichiers</h3>
+                            <button class="kt-btn kt-btn-icon kt-btn-sm kt-btn-ghost" data-kt-modal-dismiss="true">
+                                <i class="ki-filled ki-cross"></i>
+                            </button>
+                        </div>
+
+                        <div class="kt-modal-body p-5">
+                            <!-- Contexte -->
+                            <div class="bg-gray-50 rounded p-3 mb-4 text-sm">
+                                <div class="font-medium text-gray-700">SPM-TRVX-1 > T-01 > Lot 1 > Révisé 2</div>
+                                <div class="text-gray-500 mt-1">Date de soumission : 03 Juillet 2027</div>
+                            </div>
+
+                            <!-- Commentaire -->
+                            <div class="mb-4">
+                                <label class="kt-form-label">Commentaire</label>
+                                <textarea class="kt-input" rows="4"
+                                          placeholder="Expliquez la raison de cette révision ou ajoutez des notes..."></textarea>
+                            </div>
+
+                            <!-- Fichiers joints -->
+                            <div>
+                                <label class="kt-form-label">Fichiers justificatifs</label>
+                                <input type="file" class="kt-input" multiple />
+                                <p class="text-xs text-muted-foreground mt-1">Formats acceptés : PDF, Word, Excel, Images (max 10MB par fichier)</p>
+                            </div>
+                        </div>
+
+                        <div class="kt-modal-footer flex justify-end gap-2 px-5 py-4 border-t">
+                            <button class="kt-btn kt-btn-outline" data-kt-modal-dismiss="true">Annuler</button>
+                            <button class="kt-btn kt-btn-primary" data-kt-modal-dismiss="true">Enregistrer</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal View Comment -->
+                <div class="kt-modal" data-kt-modal="true" id="modal_view_comment">
+                    <div class="kt-modal-content max-w-[700px]">
+                        <div class="kt-modal-header px-5 py-4 border-b">
+                            <h3 class="kt-modal-title">Commentaires & Fichiers attachés</h3>
+                            <button class="kt-btn kt-btn-icon kt-btn-sm kt-btn-ghost" data-kt-modal-dismiss="true">
+                                <i class="ki-filled ki-cross"></i>
+                            </button>
+                        </div>
+
+                        <div class="kt-modal-body p-5">
+                            <!-- Contexte -->
+                            <div class="bg-gray-50 rounded p-3 mb-4 text-sm">
+                                <div class="font-medium text-gray-700">SPM-TRVX-1 > T-01 > Lot 1 > Révisé 2</div>
+                                <div class="text-gray-500 mt-1">Date de soumission : 03 Juillet 2027 (RÉEL)</div>
+                            </div>
+
+                            <!-- Liste des commentaires -->
+                            <div class="space-y-4 mb-4">
+                                <!-- Commentaire 1 -->
+                                <div class="border border-gray-200 rounded-lg p-4">
+                                    <div class="flex items-start justify-between mb-2">
+                                        <div class="flex items-center gap-2">
+                                            <i class="ki-filled ki-user text-primary"></i>
+                                            <span class="font-medium text-sm">Jean Dupont</span>
+                                        </div>
+                                        <span class="text-xs text-muted-foreground">03 Juil 2027, 14:30</span>
+                                    </div>
+                                    <p class="text-sm text-gray-700 mb-3">
+                                        Date de soumission effectuée avec succès. Le dossier a été déposé auprès de la commission d'appel d'offres.
+                                    </p>
+                                    <!-- Fichiers attachés -->
+                                    <div class="space-y-2">
+                                        <div class="flex items-center justify-between p-2 bg-gray-50 rounded">
+                                            <div class="flex items-center gap-2">
+                                                <i class="ki-filled ki-file text-primary"></i>
+                                                <div>
+                                                    <span class="text-sm font-medium">justification_soumission.pdf</span>
+                                                    <span class="text-xs text-gray-500 ml-2">(2.3 MB)</span>
+                                                </div>
+                                            </div>
+                                            <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost" title="Télécharger">
+                                                <i class="ki-filled ki-download text-primary"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Commentaire 2 -->
+                                <div class="border border-gray-200 rounded-lg p-4">
+                                    <div class="flex items-start justify-between mb-2">
+                                        <div class="flex items-center gap-2">
+                                            <i class="ki-filled ki-user text-primary"></i>
+                                            <span class="font-medium text-sm">Marie Martin</span>
+                                        </div>
+                                        <span class="text-xs text-muted-foreground">05 Juil 2027, 09:15</span>
+                                    </div>
+                                    <p class="text-sm text-gray-700">
+                                        Confirmation de réception par la commission. Dossier enregistré sous le numéro 2027-AO-045.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Formulaire d'ajout de commentaire -->
+                            <div class="border-t pt-4">
+                                <label class="kt-form-label text-sm mb-2">Ajouter un commentaire</label>
+                                <textarea class="kt-input" rows="3"
+                                          placeholder="Ajouter une note supplémentaire..."></textarea>
+                                <div class="mt-3">
+                                    <label class="kt-form-label text-sm mb-2">Fichiers supplémentaires</label>
+                                    <input type="file" class="kt-input" multiple />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kt-modal-footer flex justify-end gap-2 px-5 py-4 border-t">
+                            <button class="kt-btn kt-btn-outline" data-kt-modal-dismiss="true">Fermer</button>
+                            <button class="kt-btn kt-btn-primary">Ajouter le commentaire</button>
                         </div>
                     </div>
                 </div>
