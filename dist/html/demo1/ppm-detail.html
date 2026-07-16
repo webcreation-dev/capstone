@@ -45,7 +45,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
     <link href="assets/css/styles.css" rel="stylesheet" />
 </head>
 
-<body class="antialiased flex h-full text-base text-foreground bg-background demo1 kt-sidebar-fixed kt-header-fixed">
+<body class="antialiased flex h-full text-base text-foreground bg-background demo1 kt-sidebar-fixed kt-header-fixed overflow-x-hidden w-full max-w-[100vw]">
     <!-- Theme Mode -->
     <script>
         const defaultThemeMode = 'light'; // light|dark|system
@@ -2699,12 +2699,11 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                         </tr>
                                         <!-- Columns Header -->
                                         <tr>
-                                            <th class="sticky left-0 bg-light z-20 w-[100px]">N° Package</th>
-                                            <th style="left: 100px;" class="sticky  bg-light z-20 min-w-[200px]">Description du
-                                                Package</th>
-                                            <th style="left: 300px;" class="sticky  bg-light z-20 w-[80px]">Lot</th>
-                                            <th style="left: 380px;" class="sticky  bg-light z-20 min-w-[200px] border-r">
-                                                Description du Lot</th>
+                                            <th class="sticky left-0 bg-light z-30 w-[150px]">SPM</th>
+                                            <th class="sticky bg-light z-30 w-[100px]" style="left: 150px;">N° Package</th>
+                                            <th class="sticky bg-light z-30 min-w-[200px]" style="left: 250px;">Description du Package</th>
+                                            <th class="sticky bg-light z-30 w-[80px]" style="left: 450px;">Lot</th>
+                                            <th class="sticky bg-light z-30 min-w-[200px] border-r" style="left: 530px;">Description du Lot</th>
 
                                             <th class="min-w-[150px]">Mode de passation</th>
                                             <th class="min-w-[150px]">Date de soumission</th>
@@ -2721,13 +2720,8 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                     <tbody>
                                         <!-- SPM 1 -->
                                         <tr class="group hover:bg-light/50">
-                                            <td class="sticky left-0 bg-white group-hover:bg-light/50 z-10 font-bold"
-                                                rowspan="2">
-                                                T-01
-                                                <button
-                                                    class="kt-btn kt-btn-icon kt-btn-xs kt-btn-ghost opacity-0 group-hover:opacity-100 mt-2"
-                                                    title="Modifier SPM"><i class="ki-filled ki-pencil"></i></button>
-                                            </td>
+                                            <td class="sticky left-0 bg-white group-hover:bg-light/50 z-20 font-bold text-sm" rowspan="2">SPM-TRVX-1<button class="kt-btn kt-btn-icon kt-btn-xs kt-btn-ghost opacity-0 group-hover:opacity-100 mt-2" title="Modifier SPM"><i class="ki-filled ki-pencil"></i></button></td>
+                                            <td class="sticky bg-white group-hover:bg-light/50 z-20 font-bold" style="left: 150px;" rowspan="2">T-01</td>
                                             <td style="left: 100px;" class="sticky  bg-white group-hover:bg-light/50 z-10 font-medium"
                                                 rowspan="2">Travaux de construction du tronçon Djougou-Pehunco</td>
 
@@ -2820,12 +2814,8 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
 
                                         <!-- SPM 2 -->
                                         <tr class="group hover:bg-light/50 border-t-2 border-t-gray-200">
-                                            <td class="sticky left-0 bg-white group-hover:bg-light/50 z-10 font-bold">
-                                                B-01
-                                                <button
-                                                    class="kt-btn kt-btn-icon kt-btn-xs kt-btn-ghost opacity-0 group-hover:opacity-100 mt-2"
-                                                    title="Modifier SPM"><i class="ki-filled ki-pencil"></i></button>
-                                            </td>
+                                            <td class="sticky left-0 bg-white group-hover:bg-light/50 z-20 font-bold text-sm">SPM-BIENS-1<button class="kt-btn kt-btn-icon kt-btn-xs kt-btn-ghost opacity-0 group-hover:opacity-100 mt-2" title="Modifier SPM"><i class="ki-filled ki-pencil"></i></button></td>
+                                            <td class="sticky bg-white group-hover:bg-light/50 z-20 font-bold" style="left: 150px;">B-01</td>
                                             <td
                                                 style="left: 100px;" class="sticky  bg-white group-hover:bg-light/50 z-10 font-medium">
                                                 Acquisition de matériel informatique</td>
