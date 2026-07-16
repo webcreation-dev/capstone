@@ -408,7 +408,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                 data-kt-sticky="true" data-kt-sticky-class="border-b border-border" data-kt-sticky-name="header"
                 id="header">
                 <!-- Container -->
-                <div class="kt-container-fixed flex justify-between items-stretch lg:gap-4" id="headerContainer">
+                <div class="kt-container-fluid flex justify-between items-stretch lg:gap-4" id="headerContainer">
                     <!-- Mobile Logo -->
                     <div class="flex gap-2.5 lg:hidden items-center -ms-1">
                         <a class="shrink-0" href="html/demo1.html">
@@ -2606,7 +2606,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
             <!-- Content -->
             <main class="grow pt-5" id="content" role="content">
                 <!-- Container -->
-                <div class="kt-container-fixed">
+                <div class="kt-container-fluid">
                     <div class="flex flex-wrap items-center lg:items-end justify-between gap-5 pb-7.5">
                         <div class="flex flex-col justify-center gap-2">
                             <h1 class="text-xl font-medium leading-none text-mono">Détails du Dossier PPM</h1>
@@ -2628,7 +2628,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                 <!-- End of Container -->
 
                 <!-- Container Project Info -->
-                <div class="kt-container-fixed mb-7.5">
+                <div class="kt-container-fluid mb-7.5">
                     <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
                         <div class="kt-card flex-col justify-center gap-4 h-full p-5">
                             <div class="flex flex-col gap-1">
@@ -2673,9 +2673,10 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                     </div>
                 </div>
 
-                <!-- Main Table Container -->
-                <div class="kt-container-fixed">
-                    <div class="kt-card min-w-full">
+                <!-- Main Layout Container (Table + Timeline Side by Side) -->
+                <div class="kt-container-fluid flex items-start gap-5 transition-all duration-300 relative">
+                    <!-- Main Table Container -->
+                    <div class="kt-card grow min-w-0 overflow-hidden">
                         <div class="kt-card-header">
                             <h3 class="kt-card-title">Matrice détaillée (Biens & Travaux)</h3>
                         </div>
@@ -2699,10 +2700,10 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                         <!-- Columns Header -->
                                         <tr>
                                             <th class="sticky left-0 bg-light z-20 w-[100px]">N° Package</th>
-                                            <th class="sticky left-[100px] bg-light z-20 min-w-[200px]">Description du
+                                            <th style="left: 100px;" class="sticky  bg-light z-20 min-w-[200px]">Description du
                                                 Package</th>
-                                            <th class="sticky left-[300px] bg-light z-20 w-[80px]">Lot</th>
-                                            <th class="sticky left-[380px] bg-light z-20 min-w-[200px] border-r">
+                                            <th style="left: 300px;" class="sticky  bg-light z-20 w-[80px]">Lot</th>
+                                            <th style="left: 380px;" class="sticky  bg-light z-20 min-w-[200px] border-r">
                                                 Description du Lot</th>
 
                                             <th class="min-w-[150px]">Mode de passation</th>
@@ -2727,26 +2728,26 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                                     class="kt-btn kt-btn-icon kt-btn-xs kt-btn-ghost opacity-0 group-hover:opacity-100 mt-2"
                                                     title="Modifier SPM"><i class="ki-filled ki-pencil"></i></button>
                                             </td>
-                                            <td class="sticky left-[100px] bg-white group-hover:bg-light/50 z-10 font-medium"
+                                            <td style="left: 100px;" class="sticky  bg-white group-hover:bg-light/50 z-10 font-medium"
                                                 rowspan="2">Travaux de construction du tronçon Djougou-Pehunco</td>
 
                                             <!-- Lot 1 -->
-                                            <td class="sticky left-[300px] bg-white group-hover:bg-light/50 z-10">Lot 1
+                                            <td style="left: 300px;" class="sticky  bg-white group-hover:bg-light/50 z-10">Lot 1
                                             </td>
                                             <td
-                                                class="sticky left-[380px] bg-white group-hover:bg-light/50 z-10 border-r">
+                                                style="left: 380px;" class="sticky  bg-white group-hover:bg-light/50 z-10 border-r">
                                                 Section A (0-50km)</td>
 
                                             <td><span class="kt-badge kt-badge-light-primary">AOO</span></td>
 
-                                            <td class="cursor-pointer hover:bg-light"
-                                                data-kt-drawer-toggle="#drawer_timeline">
+                                            <td class="cursor-pointer hover:bg-light toggle-timeline"
+                                                class="toggle-timeline">
                                                 <div>02 Juin 2026</div>
                                                 <span
                                                     class="kt-badge kt-badge-sm kt-badge-light-success mt-1">Réel</span>
                                             </td>
-                                            <td class="cursor-pointer hover:bg-light"
-                                                data-kt-drawer-toggle="#drawer_timeline">
+                                            <td class="cursor-pointer hover:bg-light toggle-timeline"
+                                                class="toggle-timeline">
                                                 <div>15 Juin 2026</div>
                                                 <span
                                                     class="kt-badge kt-badge-sm kt-badge-light-warning mt-1">Révisé</span>
@@ -2754,21 +2755,21 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                                     title="Commentaire attaché"></i>
                                             </td>
 
-                                            <td class="cursor-pointer hover:bg-light">
+                                            <td class="cursor-pointer hover:bg-light toggle-timeline">
                                                 <div>01 Juil 2026</div>
                                                 <span
                                                     class="kt-badge kt-badge-sm kt-badge-light mt-1 text-muted-foreground">Plan</span>
                                             </td>
-                                            <td class="cursor-pointer hover:bg-light">
+                                            <td class="cursor-pointer hover:bg-light toggle-timeline">
                                                 <div>15 Juil 2026</div>
                                                 <span
                                                     class="kt-badge kt-badge-sm kt-badge-light mt-1 text-muted-foreground">Plan</span>
                                             </td>
 
-                                            <td class="cursor-pointer hover:bg-light">
+                                            <td class="cursor-pointer hover:bg-light toggle-timeline">
                                                 <div>-</div>
                                             </td>
-                                            <td class="cursor-pointer hover:bg-light">
+                                            <td class="cursor-pointer hover:bg-light toggle-timeline">
                                                 <div>-</div>
                                             </td>
                                             <td class="border-r font-medium">12.500.000.000</td>
@@ -2776,42 +2777,42 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
 
                                         <!-- SPM 1 - Lot 2 -->
                                         <tr class="group hover:bg-light/50">
-                                            <td class="sticky left-[300px] bg-white group-hover:bg-light/50 z-10">Lot 2
+                                            <td style="left: 300px;" class="sticky  bg-white group-hover:bg-light/50 z-10">Lot 2
                                             </td>
                                             <td
-                                                class="sticky left-[380px] bg-white group-hover:bg-light/50 z-10 border-r">
+                                                style="left: 380px;" class="sticky  bg-white group-hover:bg-light/50 z-10 border-r">
                                                 Section B (50-100km)</td>
 
                                             <td><span class="kt-badge kt-badge-light-primary">AOO</span></td>
 
-                                            <td class="cursor-pointer hover:bg-light"
-                                                data-kt-drawer-toggle="#drawer_timeline">
+                                            <td class="cursor-pointer hover:bg-light toggle-timeline"
+                                                class="toggle-timeline">
                                                 <div>02 Juin 2026</div>
                                                 <span
                                                     class="kt-badge kt-badge-sm kt-badge-light-success mt-1">Réel</span>
                                             </td>
-                                            <td class="cursor-pointer hover:bg-light"
-                                                data-kt-drawer-toggle="#drawer_timeline">
+                                            <td class="cursor-pointer hover:bg-light toggle-timeline"
+                                                class="toggle-timeline">
                                                 <div>15 Juin 2026</div>
                                                 <span
                                                     class="kt-badge kt-badge-sm kt-badge-light-warning mt-1">Révisé</span>
                                             </td>
 
-                                            <td class="cursor-pointer hover:bg-light">
+                                            <td class="cursor-pointer hover:bg-light toggle-timeline">
                                                 <div>01 Juil 2026</div>
                                                 <span
                                                     class="kt-badge kt-badge-sm kt-badge-light mt-1 text-muted-foreground">Plan</span>
                                             </td>
-                                            <td class="cursor-pointer hover:bg-light">
+                                            <td class="cursor-pointer hover:bg-light toggle-timeline">
                                                 <div>15 Juil 2026</div>
                                                 <span
                                                     class="kt-badge kt-badge-sm kt-badge-light mt-1 text-muted-foreground">Plan</span>
                                             </td>
 
-                                            <td class="cursor-pointer hover:bg-light">
+                                            <td class="cursor-pointer hover:bg-light toggle-timeline">
                                                 <div>-</div>
                                             </td>
-                                            <td class="cursor-pointer hover:bg-light">
+                                            <td class="cursor-pointer hover:bg-light toggle-timeline">
                                                 <div>-</div>
                                             </td>
                                             <td class="border-r font-medium">15.200.000.000</td>
@@ -2826,13 +2827,13 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                                     title="Modifier SPM"><i class="ki-filled ki-pencil"></i></button>
                                             </td>
                                             <td
-                                                class="sticky left-[100px] bg-white group-hover:bg-light/50 z-10 font-medium">
+                                                style="left: 100px;" class="sticky  bg-white group-hover:bg-light/50 z-10 font-medium">
                                                 Acquisition de matériel informatique</td>
 
-                                            <td class="sticky left-[300px] bg-white group-hover:bg-light/50 z-10">Unique
+                                            <td style="left: 300px;" class="sticky  bg-white group-hover:bg-light/50 z-10">Unique
                                             </td>
                                             <td
-                                                class="sticky left-[380px] bg-white group-hover:bg-light/50 z-10 border-r">
+                                                style="left: 380px;" class="sticky  bg-white group-hover:bg-light/50 z-10 border-r">
                                                 Matériel complet</td>
 
                                             <td><span class="kt-badge kt-badge-light-info">DRP</span></td>
@@ -2843,19 +2844,19 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                                 <span class="kt-badge kt-badge-sm kt-badge-light-danger mt-1">Plan en
                                                     retard</span>
                                             </td>
-                                            <td class="cursor-pointer hover:bg-light">
+                                            <td class="cursor-pointer hover:bg-light toggle-timeline">
                                                 <div>-</div>
                                             </td>
-                                            <td class="cursor-pointer hover:bg-light">
+                                            <td class="cursor-pointer hover:bg-light toggle-timeline">
                                                 <div>-</div>
                                             </td>
-                                            <td class="cursor-pointer hover:bg-light">
+                                            <td class="cursor-pointer hover:bg-light toggle-timeline">
                                                 <div>-</div>
                                             </td>
-                                            <td class="cursor-pointer hover:bg-light">
+                                            <td class="cursor-pointer hover:bg-light toggle-timeline">
                                                 <div>-</div>
                                             </td>
-                                            <td class="cursor-pointer hover:bg-light">
+                                            <td class="cursor-pointer hover:bg-light toggle-timeline">
                                                 <div>-</div>
                                             </td>
                                             <td class="border-r font-medium">45.000.000</td>
@@ -2868,15 +2869,15 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                     </div>
                 </div>
 
-                <!-- Drawer Timeline (Offcanvas) -->
-                <div class="kt-drawer kt-drawer-end w-[400px]" data-kt-drawer="true" id="drawer_timeline">
-                    <div class="kt-drawer-header flex justify-between items-center px-5 py-4 border-b">
-                        <h3 class="font-medium text-lg text-foreground">Historique : Date d'Avis (NO)</h3>
-                        <button class="kt-btn kt-btn-icon kt-btn-sm kt-btn-ghost" data-kt-drawer-dismiss="true">
+                <!-- Timeline Panel (Side by Side) -->
+                    <div class="kt-card w-[400px] shrink-0 hidden sticky top-[80px]" id="drawer_timeline">
+                        <div class="flex justify-between items-center px-5 py-4 border-b">
+                            <h3 class="font-medium text-lg text-foreground">Historique : Date d'Avis (NO)</h3>
+                            <button class="kt-btn kt-btn-icon kt-btn-sm kt-btn-ghost" id="close_timeline">
                             <i class="ki-filled ki-cross text-lg"></i>
                         </button>
                     </div>
-                    <div class="kt-drawer-body p-5">
+                    <div class="p-5 overflow-y-auto max-h-[calc(100vh-150px)]">
                         <div class="kt-timeline">
                             <!-- Plan -->
                             <div class="kt-timeline-item relative pb-7">
@@ -2973,43 +2974,31 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                 <i class="ki-filled ki-cross"></i>
                             </button>
                         </div>
-                        <div class="kt-modal-body p-5">
-                            <div class="grid grid-cols-2 gap-4">
-                                <div class="col-span-2">
-                                    <label class="kt-form-label">Type de Package</label>
+                        <div class="kt-modal-body p-7">
+                            <div class="flex flex-col gap-7">
+                                <div>
+                                    <label class="kt-form-label mb-2">Type de Package</label>
                                     <select class="kt-select">
                                         <option>Travaux</option>
                                         <option>Biens</option>
                                         <option>Consultants</option>
                                     </select>
                                 </div>
-                                <div class="col-span-2">
-                                    <label class="kt-form-label">Description du Package</label>
+                                <div>
+                                    <label class="kt-form-label mb-2">Description du Package</label>
                                     <input type="text" class="kt-input" placeholder="Ex: Construction de route..." />
                                 </div>
-                                <div>
-                                    <label class="kt-form-label">Mode de Passation</label>
-                                    <select class="kt-select">
-                                        <option>AOO (Appel d'Offres Ouvert)</option>
-                                        <option>DRP</option>
-                                        <option>DC</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <label class="kt-form-label">Contrôle / Audit</label>
-                                    <select class="kt-select">
-                                        <option>Préalable</option>
-                                        <option>A Posteriori</option>
-                                    </select>
-                                </div>
-                                <div class="col-span-2 border-t pt-4 mt-2">
-                                    <h4 class="font-medium mb-3">Lots associés</h4>
-                                    <div class="flex items-center gap-2 mb-2">
-                                        <input type="text" class="kt-input w-1/4" placeholder="N° Lot" value="Lot 1" />
-                                        <input type="text" class="kt-input w-3/4" placeholder="Description du Lot" />
+                                <div class="border-t pt-5">
+                                    <h4 class="font-medium mb-4 text-base">Lots associés</h4>
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex items-center gap-3">
+                                            <input type="text" class="kt-input w-1/4" placeholder="N° Lot" value="Lot 1" />
+                                            <input type="text" class="kt-input w-3/4" placeholder="Description du Lot" />
+                                        </div>
+                                        <button class="kt-btn kt-btn-sm kt-btn-outline kt-btn-dashed w-full mt-2">
+                                            <i class="ki-filled ki-plus"></i> Ajouter un lot
+                                        </button>
                                     </div>
-                                    <button class="kt-btn kt-btn-sm kt-btn-outline kt-btn-dashed w-full mt-2"><i
-                                            class="ki-filled ki-plus"></i> Ajouter un lot</button>
                                 </div>
                             </div>
                         </div>
@@ -3026,7 +3015,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
             <!-- Footer -->
             <footer class="kt-footer">
                 <!-- Container -->
-                <div class="kt-container-fixed">
+                <div class="kt-container-fluid">
                     <div class="flex flex-col md:flex-row justify-center md:justify-between items-center gap-3 py-5">
                         <div class="flex order-2 md:order-1 gap-2 font-normal text-sm">
                             <span class="text-secondary-foreground">
@@ -4442,6 +4431,27 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
     <script src="assets/js/layouts/demo1.js">
     </script>
     <!-- End of Scripts -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cells = document.querySelectorAll('.toggle-timeline');
+            const panel = document.getElementById('drawer_timeline');
+            const closeBtn = document.getElementById('close_timeline');
+
+            cells.forEach(cell => {
+                cell.addEventListener('click', () => {
+                    panel.classList.remove('hidden');
+                });
+            });
+
+            if (closeBtn) {
+                closeBtn.addEventListener('click', () => {
+                    panel.classList.add('hidden');
+                });
+            }
+        });
+    </script>
 </body>
+
 
 </html>
