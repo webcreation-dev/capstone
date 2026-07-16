@@ -45,7 +45,8 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
     <link href="assets/css/styles.css" rel="stylesheet" />
 </head>
 
-<body class="antialiased flex h-full text-base text-foreground bg-background demo1 kt-sidebar-fixed kt-header-fixed overflow-x-hidden w-full max-w-[100vw]">
+<body
+    class="antialiased flex h-full text-base text-foreground bg-background demo1 kt-sidebar-fixed kt-header-fixed overflow-x-hidden w-full max-w-[100vw]">
     <!-- Theme Mode -->
     <script>
         const defaultThemeMode = 'light'; // light|dark|system
@@ -1878,8 +1879,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                         data-kt-tab-toggle="#date_details_tab_comments">
                                         Commentaires
                                     </button>
-                                    <button class="kt-tab-toggle py-3"
-                                        data-kt-tab-toggle="#date_details_tab_documents">
+                                    <button class="kt-tab-toggle py-3" data-kt-tab-toggle="#date_details_tab_documents">
                                         Documents
                                     </button>
                                 </div>
@@ -1967,12 +1967,14 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                                             a ajouté un commentaire
                                                         </span>
                                                     </div>
-                                                    <span class="flex items-center text-xs font-medium text-muted-foreground">
+                                                    <span
+                                                        class="flex items-center text-xs font-medium text-muted-foreground">
                                                         03 Juil 2027, 14:30
                                                     </span>
                                                 </div>
                                                 <div class="text-sm text-secondary-foreground">
-                                                    Date de soumission effectuée avec succès. Le dossier a été déposé auprès de la commission d'appel d'offres.
+                                                    Date de soumission effectuée avec succès. Le dossier a été déposé
+                                                    auprès de la commission d'appel d'offres.
                                                 </div>
                                                 <div class="flex gap-2">
                                                     <button class="kt-btn kt-btn-ghost kt-btn-sm text-xs">
@@ -2005,12 +2007,14 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                                             a ajouté un commentaire
                                                         </span>
                                                     </div>
-                                                    <span class="flex items-center text-xs font-medium text-muted-foreground">
+                                                    <span
+                                                        class="flex items-center text-xs font-medium text-muted-foreground">
                                                         03 Juil 2027, 16:45
                                                     </span>
                                                 </div>
                                                 <div class="text-sm text-secondary-foreground">
-                                                    Confirmation reçue de l'administration. Le dossier est complet et conforme aux exigences.
+                                                    Confirmation reçue de l'administration. Le dossier est complet et
+                                                    conforme aux exigences.
                                                 </div>
                                                 <div class="flex gap-2">
                                                     <button class="kt-btn kt-btn-ghost kt-btn-sm text-xs">
@@ -2030,7 +2034,8 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                         <div class="px-5">
                                             <div class="text-sm font-semibold mb-3">Ajouter un commentaire</div>
                                             <div class="kt-input mb-3">
-                                                <textarea class="w-full" placeholder="Écrivez votre commentaire..." rows="3"></textarea>
+                                                <textarea class="w-full" placeholder="Écrivez votre commentaire..."
+                                                    rows="3"></textarea>
                                             </div>
                                             <button class="kt-btn kt-btn-primary kt-btn-sm">
                                                 <i class="ki-filled ki-check"></i>
@@ -2070,13 +2075,17 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
 
                                         <!-- Zone d'upload -->
                                         <div class="px-5">
-                                            <div class="kt-card shadow-none p-4 rounded-lg bg-muted/70 border-2 border-dashed border-border">
+                                            <div
+                                                class="kt-card shadow-none p-4 rounded-lg bg-muted/70 border-2 border-dashed border-border">
                                                 <div class="flex flex-col items-center gap-2 text-center">
                                                     <i class="ki-filled ki-file-up text-3xl text-primary"></i>
-                                                    <div class="text-sm font-semibold">Glisser-déposer ou cliquer pour uploader</div>
-                                                    <div class="text-xs text-muted-foreground">PDF, Word, Excel, Images (max 10MB)</div>
+                                                    <div class="text-sm font-semibold">Glisser-déposer ou cliquer pour
+                                                        uploader</div>
+                                                    <div class="text-xs text-muted-foreground">PDF, Word, Excel, Images
+                                                        (max 10MB)</div>
                                                     <input type="file" class="hidden" id="file_upload_input" multiple />
-                                                    <button class="kt-btn kt-btn-outline kt-btn-sm mt-2" onclick="document.getElementById('file_upload_input').click()">
+                                                    <button class="kt-btn kt-btn-outline kt-btn-sm mt-2"
+                                                        onclick="document.getElementById('file_upload_input').click()">
                                                         Parcourir
                                                     </button>
                                                 </div>
@@ -2092,14 +2101,16 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             </div>
                                             <div class="flex flex-col gap-1 grow">
                                                 <div class="flex items-center justify-between">
-                                                    <a class="hover:text-primary font-medium text-secondary-foreground text-sm" href="#">
+                                                    <a class="hover:text-primary font-medium text-secondary-foreground text-sm"
+                                                        href="#">
                                                         justification_soumission.pdf
                                                     </a>
                                                     <div class="flex gap-1">
                                                         <button class="kt-btn kt-btn-ghost kt-btn-icon kt-btn-sm">
                                                             <i class="ki-filled ki-download"></i>
                                                         </button>
-                                                        <button class="kt-btn kt-btn-ghost kt-btn-icon kt-btn-sm text-danger">
+                                                        <button
+                                                            class="kt-btn kt-btn-ghost kt-btn-icon kt-btn-sm text-danger">
                                                             <i class="ki-filled ki-trash"></i>
                                                         </button>
                                                     </div>
@@ -2123,14 +2134,16 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             </div>
                                             <div class="flex flex-col gap-1 grow">
                                                 <div class="flex items-center justify-between">
-                                                    <a class="hover:text-primary font-medium text-secondary-foreground text-sm" href="#">
+                                                    <a class="hover:text-primary font-medium text-secondary-foreground text-sm"
+                                                        href="#">
                                                         rapport_technique.docx
                                                     </a>
                                                     <div class="flex gap-1">
                                                         <button class="kt-btn kt-btn-ghost kt-btn-icon kt-btn-sm">
                                                             <i class="ki-filled ki-download"></i>
                                                         </button>
-                                                        <button class="kt-btn kt-btn-ghost kt-btn-icon kt-btn-sm text-danger">
+                                                        <button
+                                                            class="kt-btn kt-btn-ghost kt-btn-icon kt-btn-sm text-danger">
                                                             <i class="ki-filled ki-trash"></i>
                                                         </button>
                                                     </div>
@@ -2154,14 +2167,16 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             </div>
                                             <div class="flex flex-col gap-1 grow">
                                                 <div class="flex items-center justify-between">
-                                                    <a class="hover:text-primary font-medium text-secondary-foreground text-sm" href="#">
+                                                    <a class="hover:text-primary font-medium text-secondary-foreground text-sm"
+                                                        href="#">
                                                         budget_previsionnel.xlsx
                                                     </a>
                                                     <div class="flex gap-1">
                                                         <button class="kt-btn kt-btn-ghost kt-btn-icon kt-btn-sm">
                                                             <i class="ki-filled ki-download"></i>
                                                         </button>
-                                                        <button class="kt-btn kt-btn-ghost kt-btn-icon kt-btn-sm text-danger">
+                                                        <button
+                                                            class="kt-btn kt-btn-ghost kt-btn-icon kt-btn-sm text-danger">
                                                             <i class="ki-filled ki-trash"></i>
                                                         </button>
                                                     </div>
@@ -2941,11 +2956,11 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                 <div class="kt-container-fluid">
                     <div class="flex flex-wrap items-center lg:items-end justify-between gap-5 pb-7.5">
                         <div class="flex flex-col justify-center gap-2">
-                            <h1 class="text-xl font-medium leading-none text-mono">Détails du Dossier PPM</h1>
+                            <!-- <h1 class="text-xl font-medium leading-none text-mono">Détails du Dossier PPM</h1>
                             <div class="flex items-center flex-wrap gap-1.5 font-medium">
                                 <span class="text-base text-secondary-foreground">PROJET D'AMENAGEMENT DE LA ROUTE
                                     DJOUGOU-PEHUNCO-KEROU-BANIKOARA</span>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="flex items-center gap-2.5">
                             <button class="kt-btn kt-btn-outline" data-kt-modal-toggle="#modal_add_spm">
@@ -2960,7 +2975,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                 <!-- End of Container -->
 
                 <!-- Container Project Info -->
-                <div class="kt-container-fluid mb-7.5">
+                <!-- <div class="kt-container-fluid mb-7.5">
                     <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
                         <div class="kt-card flex-col justify-center gap-4 h-full p-5">
                             <div class="flex flex-col gap-1">
@@ -3003,14 +3018,15 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Main Layout Container (Table + Timeline Side by Side) -->
                 <div class="kt-container-fluid flex items-start gap-5 transition-all duration-300 relative">
                     <!-- Main Table Container -->
                     <div class="kt-card grow min-w-0 overflow-hidden">
                         <div class="kt-card-header">
-                            <h3 class="kt-card-title">Matrice détaillée (Biens & Travaux)</h3>
+                            <h3 class="kt-card-title">PROJET D'AMENAGEMENT DE LA ROUTE DJOUGOU-PEHUNCO-KEROU-BANIKOARA
+                            </h3>
                         </div>
                         <div class="kt-card-content p-0">
                             <div class="overflow-x-auto">
@@ -3022,7 +3038,8 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             <th colspan="5"
                                                 class="sticky left-0 top-0 bg-white z-[35] border-r border-b text-center font-bold shadow-[2px_0_4px_rgba(0,0,0,0.1)]">
                                                 Informations de Base</th>
-                                            <th colspan="7" class="border-b text-center font-bold border-r">Détails Techniques</th>
+                                            <th colspan="7" class="border-b text-center font-bold border-r">Détails
+                                                Techniques</th>
                                             <th colspan="2" class="border-b text-center font-bold">Dossier d'Appel
                                                 d'Offres</th>
                                             <th colspan="2" class="border-b text-center font-bold">Évaluation des Offres
@@ -3032,11 +3049,21 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                         </tr>
                                         <!-- Columns Header -->
                                         <tr>
-                                            <th class="sticky left-0 top-0 bg-white z-[34] w-[150px] border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.1)]">SPM</th>
-                                            <th class="sticky left-[150px] top-0 bg-white z-[33] w-[100px] border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.1)]">N° Package</th>
-                                            <th class="sticky left-[250px] top-0 bg-white z-[32] min-w-[200px] border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.1)]">Description du Package</th>
-                                            <th class="sticky left-[450px] top-0 bg-white z-[31] w-[80px] border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.1)]">Lot</th>
-                                            <th class="sticky left-[530px] top-0 bg-white z-[30] min-w-[200px] border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.1)]">Description du Lot</th>
+                                            <th
+                                                class="sticky left-0 top-0 bg-white z-[34] w-[150px] border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.1)]">
+                                                SPM</th>
+                                            <th
+                                                class="sticky left-[150px] top-0 bg-white z-[33] w-[100px] border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.1)]">
+                                                N° Package</th>
+                                            <th
+                                                class="sticky left-[250px] top-0 bg-white z-[32] min-w-[200px] border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.1)]">
+                                                Description du Package</th>
+                                            <th
+                                                class="sticky left-[450px] top-0 bg-white z-[31] w-[80px] border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.1)]">
+                                                Lot</th>
+                                            <th
+                                                class="sticky left-[530px] top-0 bg-white z-[30] min-w-[200px] border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.1)]">
+                                                Description du Lot</th>
 
                                             <th class="min-w-[180px]">N° Appel d'Offres émis</th>
                                             <th class="min-w-[200px]">Montant forfaitaire ou DQE</th>
@@ -3062,26 +3089,35 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                         <!-- Lot 1 - Ligne 1 : Plan -->
                                         <tr class="group hover:bg-light/50 relative border-b border-gray-200">
                                             <!-- Actions au hover -->
-                                            <div class="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity flex gap-1 bg-white shadow-lg rounded-lg p-1 z-[40] border border-border">
-                                                <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-light" title="Ajouter une révision">
+                                            <div
+                                                class="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity flex gap-1 bg-white shadow-lg rounded-lg p-1 z-[40] border border-border">
+                                                <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-light"
+                                                    title="Ajouter une révision">
                                                     <i class="ki-filled ki-plus-circle text-warning"></i>
                                                 </button>
-                                                <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-light" title="Modifier SPM" data-kt-modal-toggle="#modal_add_spm">
+                                                <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-light"
+                                                    title="Modifier SPM" data-kt-modal-toggle="#modal_add_spm">
                                                     <i class="ki-filled ki-pencil text-info"></i>
                                                 </button>
-                                                <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-light" title="Supprimer SPM">
+                                                <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-light"
+                                                    title="Supprimer SPM">
                                                     <i class="ki-filled ki-trash text-danger"></i>
                                                 </button>
                                             </div>
 
                                             <!-- Colonnes sticky avec rowspan pour tout le SPM -->
-                                            <td class="sticky left-0 bg-white group-hover:bg-light/50 z-[14] font-bold text-sm border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]" rowspan="7">SPM-TRVX-1</td>
-                                            <td class="sticky left-[150px] bg-white group-hover:bg-light/50 z-[13] font-bold border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]" rowspan="7">T-01</td>
-                                            <td class="sticky left-[250px] bg-white group-hover:bg-light/50 z-[12] font-medium border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]" rowspan="7">Travaux de construction du tronçon Djougou-Pehunco</td>
+                                            <td class="sticky left-0 bg-white group-hover:bg-light/50 z-[14] font-bold text-sm border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]"
+                                                rowspan="9">SPM-TRVX-1</td>
+                                            <td class="sticky left-[150px] bg-white group-hover:bg-light/50 z-[13] font-bold border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]"
+                                                rowspan="9">T-01</td>
+                                            <td class="sticky left-[250px] bg-white group-hover:bg-light/50 z-[12] font-medium border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]"
+                                                rowspan="9">Travaux de construction du tronçon Djougou-Pehunco</td>
 
                                             <!-- Lot 1 avec rowspan pour toutes ses lignes de suivi -->
-                                            <td class="sticky left-[450px] bg-white group-hover:bg-light/50 z-[11] border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]" rowspan="4">Lot 1</td>
-                                            <td class="sticky left-[530px] bg-white group-hover:bg-light/50 z-10 border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]" rowspan="4">Section A (0-50km)</td>
+                                            <td class="sticky left-[450px] bg-white group-hover:bg-light/50 z-[11] border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]"
+                                                rowspan="5">Lot 1</td>
+                                            <td class="sticky left-[530px] bg-white group-hover:bg-light/50 z-10 border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]"
+                                                rowspan="5">Section A (0-50km)</td>
 
                                             <!-- 6 colonnes techniques -->
                                             <td class="text-muted-foreground">-</td>
@@ -3103,9 +3139,10 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             <td class="p-2">
                                                 <div class="flex items-center justify-between gap-2">
                                                     <span class="text-sm">02 Juin 2026</span>
-                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
-                                                            title="Voir commentaires et fichiers"
-                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                    <button
+                                                        class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                        title="Voir commentaires et fichiers"
+                                                        data-kt-drawer-toggle="#date_details_drawer">
                                                         <i class="ki-filled ki-eye text-xs"></i>
                                                     </button>
                                                 </div>
@@ -3115,9 +3152,10 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             <td class="p-2">
                                                 <div class="flex items-center justify-between gap-2">
                                                     <span class="text-sm">15 Juin 2026</span>
-                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
-                                                            title="Voir commentaires et fichiers"
-                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                    <button
+                                                        class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                        title="Voir commentaires et fichiers"
+                                                        data-kt-drawer-toggle="#date_details_drawer">
                                                         <i class="ki-filled ki-eye text-xs"></i>
                                                     </button>
                                                 </div>
@@ -3127,9 +3165,10 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             <td class="p-2">
                                                 <div class="flex items-center justify-between gap-2">
                                                     <span class="text-sm">01 Juil 2026</span>
-                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
-                                                            title="Voir commentaires et fichiers"
-                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                    <button
+                                                        class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                        title="Voir commentaires et fichiers"
+                                                        data-kt-drawer-toggle="#date_details_drawer">
                                                         <i class="ki-filled ki-eye text-xs"></i>
                                                     </button>
                                                 </div>
@@ -3139,9 +3178,10 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             <td class="p-2">
                                                 <div class="flex items-center justify-between gap-2">
                                                     <span class="text-sm">15 Juil 2026</span>
-                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
-                                                            title="Voir commentaires et fichiers"
-                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                    <button
+                                                        class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                        title="Voir commentaires et fichiers"
+                                                        data-kt-drawer-toggle="#date_details_drawer">
                                                         <i class="ki-filled ki-eye text-xs"></i>
                                                     </button>
                                                 </div>
@@ -3174,9 +3214,10 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             <td class="p-2">
                                                 <div class="flex items-center justify-between gap-2">
                                                     <span class="text-sm">03 Juil 2027</span>
-                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
-                                                            title="Voir commentaires et fichiers"
-                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                    <button
+                                                        class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                        title="Voir commentaires et fichiers"
+                                                        data-kt-drawer-toggle="#date_details_drawer">
                                                         <i class="ki-filled ki-eye text-xs"></i>
                                                     </button>
                                                 </div>
@@ -3186,9 +3227,10 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             <td class="p-2">
                                                 <div class="flex items-center justify-between gap-2">
                                                     <span class="text-sm">20 Août 2027</span>
-                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
-                                                            title="Voir commentaires et fichiers"
-                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                    <button
+                                                        class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                        title="Voir commentaires et fichiers"
+                                                        data-kt-drawer-toggle="#date_details_drawer">
                                                         <i class="ki-filled ki-eye text-xs"></i>
                                                     </button>
                                                 </div>
@@ -3200,7 +3242,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             <td class="text-muted-foreground">-</td>
                                         </tr>
 
-                                        <!-- Lot 1 - Ligne 3 : Révisé 2 (avec date réelle) -->
+                                        <!-- Lot 1 - Ligne 3 : Révisé 2 -->
                                         <tr class="group hover:bg-light/50 relative border-b border-gray-200">
                                             <!-- 6 colonnes techniques -->
                                             <td class="text-muted-foreground">-</td>
@@ -3218,19 +3260,14 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                                 </div>
                                             </td>
 
-                                            <!-- Date de soumission RÉELLE -->
-                                            <td class="p-2 bg-green-50/30">
+                                            <!-- Date de soumission révisée -->
+                                            <td class="p-2">
                                                 <div class="flex items-center justify-between gap-2">
-                                                    <div class="flex flex-col">
-                                                        <span class="text-sm font-medium text-green-700">03 Juil 2027</span>
-                                                        <div class="flex items-center gap-1 mt-1">
-                                                            <i class="ki-filled ki-check-circle text-success text-xs"></i>
-                                                            <span class="kt-badge kt-badge-xs kt-badge-success">RÉEL</span>
-                                                        </div>
-                                                    </div>
-                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
-                                                            title="Voir commentaires et fichiers"
-                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                    <span class="text-sm">03 Juil 2027</span>
+                                                    <button
+                                                        class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                        title="Voir commentaires et fichiers"
+                                                        data-kt-drawer-toggle="#date_details_drawer">
                                                         <i class="ki-filled ki-eye text-xs"></i>
                                                     </button>
                                                 </div>
@@ -3240,9 +3277,10 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             <td class="p-2">
                                                 <div class="flex items-center justify-between gap-2">
                                                     <span class="text-sm">21 Août 2027</span>
-                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
-                                                            title="Voir commentaires et fichiers"
-                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                    <button
+                                                        class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                        title="Voir commentaires et fichiers"
+                                                        data-kt-drawer-toggle="#date_details_drawer">
                                                         <i class="ki-filled ki-eye text-xs"></i>
                                                     </button>
                                                 </div>
@@ -3255,7 +3293,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                         </tr>
 
                                         <!-- Lot 1 - Ligne 4 : Révisé 3 -->
-                                        <tr class="group hover:bg-light/50 relative border-b border-gray-300">
+                                        <tr class="group hover:bg-light/50 relative border-b border-gray-200">
                                             <!-- 6 colonnes techniques -->
                                             <td class="text-muted-foreground">-</td>
                                             <td class="text-muted-foreground">-</td>
@@ -3272,19 +3310,45 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                                 </div>
                                             </td>
 
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                        </tr>
+
+                                        <!-- Lot 1 - Ligne 5 : Réel -->
+                                        <tr class="group hover:bg-light/50 relative border-b border-gray-300">
+                                            <!-- 6 colonnes techniques -->
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td><span class="kt-badge kt-badge-light-primary">AOO</span></td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+
+                                            <!-- Colonne Type de Suivi -->
+                                            <td class="border-r">
+                                                <div class="flex items-center gap-2">
+                                                    <i class="ki-filled ki-check-circle text-success"></i>
+                                                    <span class="kt-badge kt-badge-sm kt-badge-success">Réel</span>
+                                                </div>
+                                            </td>
+
                                             <!-- Date de soumission RÉELLE -->
                                             <td class="p-2 bg-green-50/30">
                                                 <div class="flex items-center justify-between gap-2">
                                                     <div class="flex flex-col">
-                                                        <span class="text-sm font-medium text-green-700">03 Juil 2027</span>
-                                                        <div class="flex items-center gap-1 mt-1">
-                                                            <i class="ki-filled ki-check-circle text-success text-xs"></i>
-                                                            <span class="kt-badge kt-badge-xs kt-badge-success">RÉEL</span>
-                                                        </div>
+                                                        <span class="text-sm font-medium text-green-700">03 Juil
+                                                            2027</span>
+
                                                     </div>
-                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
-                                                            title="Voir commentaires et fichiers"
-                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                    <button
+                                                        class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                        title="Voir commentaires et fichiers"
+                                                        data-kt-drawer-toggle="#date_details_drawer">
                                                         <i class="ki-filled ki-eye text-xs"></i>
                                                     </button>
                                                 </div>
@@ -3294,15 +3358,13 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             <td class="p-2 bg-green-50/30">
                                                 <div class="flex items-center justify-between gap-2">
                                                     <div class="flex flex-col">
-                                                        <span class="text-sm font-medium text-green-700">21 Août 2027</span>
-                                                        <div class="flex items-center gap-1 mt-1">
-                                                            <i class="ki-filled ki-check-circle text-success text-xs"></i>
-                                                            <span class="kt-badge kt-badge-xs kt-badge-success">RÉEL</span>
-                                                        </div>
+                                                        <span class="text-sm font-medium text-green-700">21 Août
+                                                            2027</span>
                                                     </div>
-                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
-                                                            title="Voir commentaires et fichiers"
-                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                    <button
+                                                        class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                        title="Voir commentaires et fichiers"
+                                                        data-kt-drawer-toggle="#date_details_drawer">
                                                         <i class="ki-filled ki-eye text-xs"></i>
                                                     </button>
                                                 </div>
@@ -3317,20 +3379,26 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                         <!-- Lot 2 - Ligne 1 : Plan -->
                                         <tr class="group hover:bg-light/50 relative border-b border-gray-200">
                                             <!-- Actions au hover pour lot -->
-                                            <div class="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity flex gap-1 bg-white shadow-lg rounded-lg p-1 z-[40] border border-border">
-                                                <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-light" title="Ajouter une révision">
+                                            <div
+                                                class="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity flex gap-1 bg-white shadow-lg rounded-lg p-1 z-[40] border border-border">
+                                                <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-light"
+                                                    title="Ajouter une révision">
                                                     <i class="ki-filled ki-plus-circle text-warning"></i>
                                                 </button>
-                                                <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-light" title="Modifier ce lot">
+                                                <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-light"
+                                                    title="Modifier ce lot">
                                                     <i class="ki-filled ki-pencil text-info"></i>
                                                 </button>
-                                                <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-light" title="Supprimer ce lot">
+                                                <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-light"
+                                                    title="Supprimer ce lot">
                                                     <i class="ki-filled ki-trash text-danger"></i>
                                                 </button>
                                             </div>
 
-                                            <td class="sticky left-[450px] bg-white group-hover:bg-light/50 z-[11] border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]" rowspan="3">Lot 2</td>
-                                            <td class="sticky left-[530px] bg-white group-hover:bg-light/50 z-10 border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]" rowspan="3">Section B (50-100km)</td>
+                                            <td class="sticky left-[450px] bg-white group-hover:bg-light/50 z-[11] border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]"
+                                                rowspan="4">Lot 2</td>
+                                            <td class="sticky left-[530px] bg-white group-hover:bg-light/50 z-10 border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]"
+                                                rowspan="4">Section B (50-100km)</td>
 
                                             <!-- 6 colonnes techniques -->
                                             <td class="text-muted-foreground">-</td>
@@ -3352,9 +3420,10 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             <td class="p-2">
                                                 <div class="flex items-center justify-between gap-2">
                                                     <span class="text-sm">02 Juin 2026</span>
-                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
-                                                            title="Voir commentaires et fichiers"
-                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                    <button
+                                                        class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                        title="Voir commentaires et fichiers"
+                                                        data-kt-drawer-toggle="#date_details_drawer">
                                                         <i class="ki-filled ki-eye text-xs"></i>
                                                     </button>
                                                 </div>
@@ -3364,9 +3433,10 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             <td class="p-2">
                                                 <div class="flex items-center justify-between gap-2">
                                                     <span class="text-sm">15 Juin 2026</span>
-                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
-                                                            title="Voir commentaires et fichiers"
-                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                    <button
+                                                        class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                        title="Voir commentaires et fichiers"
+                                                        data-kt-drawer-toggle="#date_details_drawer">
                                                         <i class="ki-filled ki-eye text-xs"></i>
                                                     </button>
                                                 </div>
@@ -3376,9 +3446,10 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             <td class="p-2">
                                                 <div class="flex items-center justify-between gap-2">
                                                     <span class="text-sm">01 Juil 2026</span>
-                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
-                                                            title="Voir commentaires et fichiers"
-                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                    <button
+                                                        class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                        title="Voir commentaires et fichiers"
+                                                        data-kt-drawer-toggle="#date_details_drawer">
                                                         <i class="ki-filled ki-eye text-xs"></i>
                                                     </button>
                                                 </div>
@@ -3388,9 +3459,10 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             <td class="p-2">
                                                 <div class="flex items-center justify-between gap-2">
                                                     <span class="text-sm">15 Juil 2026</span>
-                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
-                                                            title="Voir commentaires et fichiers"
-                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                    <button
+                                                        class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                        title="Voir commentaires et fichiers"
+                                                        data-kt-drawer-toggle="#date_details_drawer">
                                                         <i class="ki-filled ki-eye text-xs"></i>
                                                     </button>
                                                 </div>
@@ -3423,9 +3495,10 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             <td class="p-2">
                                                 <div class="flex items-center justify-between gap-2">
                                                     <span class="text-sm">03 Juil 2027</span>
-                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
-                                                            title="Voir commentaires et fichiers"
-                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                    <button
+                                                        class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                        title="Voir commentaires et fichiers"
+                                                        data-kt-drawer-toggle="#date_details_drawer">
                                                         <i class="ki-filled ki-eye text-xs"></i>
                                                     </button>
                                                 </div>
@@ -3435,9 +3508,10 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             <td class="p-2">
                                                 <div class="flex items-center justify-between gap-2">
                                                     <span class="text-sm">20 Août 2027</span>
-                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
-                                                            title="Voir commentaires et fichiers"
-                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                    <button
+                                                        class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                        title="Voir commentaires et fichiers"
+                                                        data-kt-drawer-toggle="#date_details_drawer">
                                                         <i class="ki-filled ki-eye text-xs"></i>
                                                     </button>
                                                 </div>
@@ -3449,8 +3523,8 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             <td class="text-muted-foreground">-</td>
                                         </tr>
 
-                                        <!-- Lot 2 - Ligne 3 : Révisé 2 (dernière ligne du SPM) -->
-                                        <tr class="group hover:bg-light/50 relative border-b-2 border-gray-400">
+                                        <!-- Lot 2 - Ligne 3 : Révisé 2 -->
+                                        <tr class="group hover:bg-light/50 relative border-b border-gray-200">
                                             <!-- 6 colonnes techniques -->
                                             <td class="text-muted-foreground">-</td>
                                             <td class="text-muted-foreground">-</td>
@@ -3467,19 +3541,14 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                                 </div>
                                             </td>
 
-                                            <!-- Date de soumission RÉELLE -->
-                                            <td class="p-2 bg-green-50/30">
+                                            <!-- Date de soumission révisée -->
+                                            <td class="p-2">
                                                 <div class="flex items-center justify-between gap-2">
-                                                    <div class="flex flex-col">
-                                                        <span class="text-sm font-medium text-green-700">03 Juil 2027</span>
-                                                        <div class="flex items-center gap-1 mt-1">
-                                                            <i class="ki-filled ki-check-circle text-success text-xs"></i>
-                                                            <span class="kt-badge kt-badge-xs kt-badge-success">RÉEL</span>
-                                                        </div>
-                                                    </div>
-                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
-                                                            title="Voir commentaires et fichiers"
-                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                    <span class="text-sm">03 Juil 2027</span>
+                                                    <button
+                                                        class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                        title="Voir commentaires et fichiers"
+                                                        data-kt-drawer-toggle="#date_details_drawer">
                                                         <i class="ki-filled ki-eye text-xs"></i>
                                                     </button>
                                                 </div>
@@ -3489,9 +3558,10 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             <td class="p-2">
                                                 <div class="flex items-center justify-between gap-2">
                                                     <span class="text-sm">21 Août 2027</span>
-                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
-                                                            title="Voir commentaires et fichiers"
-                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                    <button
+                                                        class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                        title="Voir commentaires et fichiers"
+                                                        data-kt-drawer-toggle="#date_details_drawer">
                                                         <i class="ki-filled ki-eye text-xs"></i>
                                                     </button>
                                                 </div>
@@ -3503,28 +3573,80 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             <td class="text-muted-foreground">-</td>
                                         </tr>
 
+                                        <!-- Lot 2 - Ligne 4 : Réel (dernière ligne du SPM) -->
+                                        <tr class="group hover:bg-light/50 relative border-b-2 border-gray-400">
+                                            <!-- 6 colonnes techniques -->
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td><span class="kt-badge kt-badge-light-primary">AOO</span></td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+
+                                            <!-- Colonne Type de Suivi -->
+                                            <td class="border-r">
+                                                <div class="flex items-center gap-2">
+                                                    <i class="ki-filled ki-check-circle text-success"></i>
+                                                    <span class="kt-badge kt-badge-sm kt-badge-success">Réel</span>
+                                                </div>
+                                            </td>
+
+                                            <!-- Date de soumission RÉELLE -->
+                                            <td class="p-2 bg-green-50/30">
+                                                <div class="flex items-center justify-between gap-2">
+                                                    <div class="flex flex-col">
+                                                        <span class="text-sm font-medium text-green-700">03 Juil
+                                                            2027</span>
+                                                    </div>
+                                                    <button
+                                                        class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                        title="Voir commentaires et fichiers"
+                                                        data-kt-drawer-toggle="#date_details_drawer">
+                                                        <i class="ki-filled ki-eye text-xs"></i>
+                                                    </button>
+                                                </div>
+                                            </td>
+
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                            <td class="text-muted-foreground">-</td>
+                                        </tr>
+
                                         <!-- SPM 2 - BIENS-1 -->
                                         <!-- Ligne 1 : Plan -->
-                                        <tr class="group hover:bg-light/50 border-t-2 border-t-gray-200 relative border-b border-gray-200">
+                                        <tr
+                                            class="group hover:bg-light/50 border-t-2 border-t-gray-200 relative border-b border-gray-200">
                                             <!-- Actions au hover -->
-                                            <div class="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity flex gap-1 bg-white shadow-lg rounded-lg p-1 z-[40] border border-border">
-                                                <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-light" title="Ajouter une révision">
+                                            <div
+                                                class="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity flex gap-1 bg-white shadow-lg rounded-lg p-1 z-[40] border border-border">
+                                                <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-light"
+                                                    title="Ajouter une révision">
                                                     <i class="ki-filled ki-plus-circle text-warning"></i>
                                                 </button>
-                                                <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-light" title="Modifier SPM" data-kt-modal-toggle="#modal_add_spm">
+                                                <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-light"
+                                                    title="Modifier SPM" data-kt-modal-toggle="#modal_add_spm">
                                                     <i class="ki-filled ki-pencil text-info"></i>
                                                 </button>
-                                                <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-light" title="Supprimer SPM">
+                                                <button class="kt-btn kt-btn-sm kt-btn-icon kt-btn-light"
+                                                    title="Supprimer SPM">
                                                     <i class="ki-filled ki-trash text-danger"></i>
                                                 </button>
                                             </div>
 
                                             <!-- Colonnes sticky avec rowspan -->
-                                            <td class="sticky left-0 bg-white group-hover:bg-light/50 z-[14] font-bold text-sm border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]" rowspan="3">SPM-BIENS-1</td>
-                                            <td class="sticky left-[150px] bg-white group-hover:bg-light/50 z-[13] font-bold border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]" rowspan="3">B-01</td>
-                                            <td class="sticky left-[250px] bg-white group-hover:bg-light/50 z-[12] font-medium border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]" rowspan="3">Acquisition de matériel informatique</td>
-                                            <td class="sticky left-[450px] bg-white group-hover:bg-light/50 z-[11] border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]" rowspan="3">Unique</td>
-                                            <td class="sticky left-[530px] bg-white group-hover:bg-light/50 z-10 border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]" rowspan="3">Matériel complet</td>
+                                            <td class="sticky left-0 bg-white group-hover:bg-light/50 z-[14] font-bold text-sm border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]"
+                                                rowspan="3">SPM-BIENS-1</td>
+                                            <td class="sticky left-[150px] bg-white group-hover:bg-light/50 z-[13] font-bold border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]"
+                                                rowspan="3">B-01</td>
+                                            <td class="sticky left-[250px] bg-white group-hover:bg-light/50 z-[12] font-medium border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]"
+                                                rowspan="3">Acquisition de matériel informatique</td>
+                                            <td class="sticky left-[450px] bg-white group-hover:bg-light/50 z-[11] border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]"
+                                                rowspan="3">Unique</td>
+                                            <td class="sticky left-[530px] bg-white group-hover:bg-light/50 z-10 border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)]"
+                                                rowspan="3">Matériel complet</td>
 
                                             <!-- 6 colonnes techniques -->
                                             <td class="text-muted-foreground">-</td>
@@ -3546,9 +3668,10 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             <td class="p-2 bg-red-50/30">
                                                 <div class="flex items-center justify-between gap-2">
                                                     <span class="text-sm text-danger font-medium">10 Mai 2026</span>
-                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
-                                                            title="Voir commentaires et fichiers"
-                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                    <button
+                                                        class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                        title="Voir commentaires et fichiers"
+                                                        data-kt-drawer-toggle="#date_details_drawer">
                                                         <i class="ki-filled ki-eye text-xs"></i>
                                                     </button>
                                                 </div>
@@ -3584,9 +3707,10 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             <td class="p-2">
                                                 <div class="flex items-center justify-between gap-2">
                                                     <span class="text-sm">15 Juin 2026</span>
-                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
-                                                            title="Voir commentaires et fichiers"
-                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                    <button
+                                                        class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                        title="Voir commentaires et fichiers"
+                                                        data-kt-drawer-toggle="#date_details_drawer">
                                                         <i class="ki-filled ki-eye text-xs"></i>
                                                     </button>
                                                 </div>
@@ -3621,9 +3745,10 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             <td class="p-2">
                                                 <div class="flex items-center justify-between gap-2">
                                                     <span class="text-sm">20 Juil 2026</span>
-                                                    <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
-                                                            title="Voir commentaires et fichiers"
-                                                            data-kt-drawer-toggle="#date_details_drawer">
+                                                    <button
+                                                        class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost opacity-50 hover:opacity-100"
+                                                        title="Voir commentaires et fichiers"
+                                                        data-kt-drawer-toggle="#date_details_drawer">
                                                         <i class="ki-filled ki-eye text-xs"></i>
                                                     </button>
                                                 </div>
@@ -3644,10 +3769,10 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                 </div>
 
                 <!-- Timeline Panel (Side by Side) -->
-                    <div class="kt-card w-[400px] shrink-0 hidden sticky top-[80px]" id="drawer_timeline">
-                        <div class="flex justify-between items-center px-5 py-4 border-b">
-                            <h3 class="font-medium text-lg text-foreground">Historique : Date d'Avis (NO)</h3>
-                            <button class="kt-btn kt-btn-icon kt-btn-sm kt-btn-ghost" id="close_timeline">
+                <div class="kt-card w-[400px] shrink-0 hidden sticky top-[80px]" id="drawer_timeline">
+                    <div class="flex justify-between items-center px-5 py-4 border-b">
+                        <h3 class="font-medium text-lg text-foreground">Historique : Date d'Avis (NO)</h3>
+                        <button class="kt-btn kt-btn-icon kt-btn-sm kt-btn-ghost" id="close_timeline">
                             <i class="ki-filled ki-cross text-lg"></i>
                         </button>
                     </div>
@@ -3760,14 +3885,15 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                             <div class="mb-4">
                                 <label class="kt-form-label">Commentaire</label>
                                 <textarea class="kt-input" rows="4"
-                                          placeholder="Expliquez la raison de cette révision ou ajoutez des notes..."></textarea>
+                                    placeholder="Expliquez la raison de cette révision ou ajoutez des notes..."></textarea>
                             </div>
 
                             <!-- Fichiers joints -->
                             <div>
                                 <label class="kt-form-label">Fichiers justificatifs</label>
                                 <input type="file" class="kt-input" multiple />
-                                <p class="text-xs text-muted-foreground mt-1">Formats acceptés : PDF, Word, Excel, Images (max 10MB par fichier)</p>
+                                <p class="text-xs text-muted-foreground mt-1">Formats acceptés : PDF, Word, Excel,
+                                    Images (max 10MB par fichier)</p>
                             </div>
                         </div>
 
@@ -3807,7 +3933,8 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                         <span class="text-xs text-muted-foreground">03 Juil 2027, 14:30</span>
                                     </div>
                                     <p class="text-sm text-gray-700 mb-3">
-                                        Date de soumission effectuée avec succès. Le dossier a été déposé auprès de la commission d'appel d'offres.
+                                        Date de soumission effectuée avec succès. Le dossier a été déposé auprès de la
+                                        commission d'appel d'offres.
                                     </p>
                                     <!-- Fichiers attachés -->
                                     <div class="space-y-2">
@@ -3815,11 +3942,13 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             <div class="flex items-center gap-2">
                                                 <i class="ki-filled ki-file text-primary"></i>
                                                 <div>
-                                                    <span class="text-sm font-medium">justification_soumission.pdf</span>
+                                                    <span
+                                                        class="text-sm font-medium">justification_soumission.pdf</span>
                                                     <span class="text-xs text-gray-500 ml-2">(2.3 MB)</span>
                                                 </div>
                                             </div>
-                                            <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost" title="Télécharger">
+                                            <button class="kt-btn kt-btn-xs kt-btn-icon kt-btn-ghost"
+                                                title="Télécharger">
                                                 <i class="ki-filled ki-download text-primary"></i>
                                             </button>
                                         </div>
@@ -3836,7 +3965,8 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                         <span class="text-xs text-muted-foreground">05 Juil 2027, 09:15</span>
                                     </div>
                                     <p class="text-sm text-gray-700">
-                                        Confirmation de réception par la commission. Dossier enregistré sous le numéro 2027-AO-045.
+                                        Confirmation de réception par la commission. Dossier enregistré sous le numéro
+                                        2027-AO-045.
                                     </p>
                                 </div>
                             </div>
@@ -3845,7 +3975,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                             <div class="border-t pt-4">
                                 <label class="kt-form-label text-sm mb-2">Ajouter un commentaire</label>
                                 <textarea class="kt-input" rows="3"
-                                          placeholder="Ajouter une note supplémentaire..."></textarea>
+                                    placeholder="Ajouter une note supplémentaire..."></textarea>
                                 <div class="mt-3">
                                     <label class="kt-form-label text-sm mb-2">Fichiers supplémentaires</label>
                                     <input type="file" class="kt-input" multiple />
@@ -3887,8 +4017,10 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                     <h4 class="font-medium mb-4 text-base">Lots associés</h4>
                                     <div class="flex flex-col gap-3">
                                         <div class="flex items-center gap-3">
-                                            <input type="text" class="kt-input w-1/4" placeholder="N° Lot" value="Lot 1" />
-                                            <input type="text" class="kt-input w-3/4" placeholder="Description du Lot" />
+                                            <input type="text" class="kt-input w-1/4" placeholder="N° Lot"
+                                                value="Lot 1" />
+                                            <input type="text" class="kt-input w-3/4"
+                                                placeholder="Description du Lot" />
                                         </div>
                                         <button class="kt-btn kt-btn-sm kt-btn-outline kt-btn-dashed w-full mt-2">
                                             <i class="ki-filled ki-plus"></i> Ajouter un lot
@@ -5328,7 +5460,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
     <!-- End of Scripts -->
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const cells = document.querySelectorAll('.toggle-timeline');
             const panel = document.getElementById('drawer_timeline');
             const closeBtn = document.getElementById('close_timeline');
