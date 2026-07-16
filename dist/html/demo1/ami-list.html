@@ -2256,28 +2256,28 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
      <div class="kt-container-fixed">
       <div class="flex flex-wrap items-center lg:items-end justify-between gap-5 pb-7.5">
        <div class="flex flex-col justify-center gap-2">
-        <h1 class="text-xl font-medium leading-none text-mono">Liste des AMI</h1>
+        <h1 class="text-xl font-medium leading-none text-mono">Liste des Avis à Manifestation d'Intérêt (AMI)</h1>
         <div class="flex items-center flex-wrap gap-1.5 font-medium">
          <span class="text-base text-secondary-foreground">
-          All Members:
+          Total AMI:
          </span>
          <span class="text-base text-foreground font-semibold me-2">
-          49,053
+          12
          </span>
          <span class="text-base text-secondary-foreground">
-          Pro Licenses
+          En cours de validité:
          </span>
          <span class="text-base text-foreground font-semibold">
-          1724
+          5
          </span>
         </div>
        </div>
        <div class="flex items-center gap-2.5">
         <a class="kt-btn kt-btn-outline" href="#">
-         Import CSV
+         Exporter
         </a>
         <a class="kt-btn kt-btn-primary" href="#">
-         Add Member
+         Publier un AMI
         </a>
        </div>
       </div>
@@ -2289,43 +2289,32 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
        <div class="kt-card kt-card-grid min-w-full">
         <div class="kt-card-header flex-wrap gap-2">
          <h3 class="kt-card-title text-sm">
-          Showing 10 of 49,053 users
+          Affichage de 4 AMI sur 12
          </h3>
          <div class="flex flex-wrap gap-2 lg:gap-5">
           <div class="flex">
            <label class="kt-input">
             <i class="ki-filled ki-magnifier">
             </i>
-            <input placeholder="Search users" type="text" value=""/>
+            <input placeholder="Rechercher un avis..." type="text" value=""/>
            </label>
           </div>
           <div class="flex flex-wrap gap-2.5">
-           <select class="kt-select w-36" data-kt-select="true" data-kt-select-placeholder="Select a status">
-            <option value="1">
-             Active
-            </option>
-            <option value="2">
-             Disabled
-            </option>
-            <option value="2">
-             Pending
-            </option>
+           <select class="kt-select w-36" data-kt-select="true" data-kt-select-placeholder="Filtrer par statut">
+            <option value="1">Tous</option>
+            <option value="2">Publié</option>
+            <option value="3">Clôturé</option>
+            <option value="4">Brouillon</option>
            </select>
-           <select class="kt-select w-36" data-kt-select="true" data-kt-select-placeholder="Select a sort">
-            <option value="1">
-             Latest
-            </option>
-            <option value="2">
-             Older
-            </option>
-            <option value="3">
-             Oldest
-            </option>
+           <select class="kt-select w-44" data-kt-select="true" data-kt-select-placeholder="Trier par">
+            <option value="1">Plus récents</option>
+            <option value="2">Plus anciens</option>
+            <option value="3">Date limite proche</option>
            </select>
            <button class="kt-btn kt-btn-outline kt-btn-primary">
             <i class="ki-filled ki-setting-4">
             </i>
-            Filters
+            Filtres
            </button>
           </div>
          </div>
@@ -2342,7 +2331,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
               <th class="min-w-[300px]">
                <span class="kt-table-col">
                 <span class="kt-table-col-label">
-                 Subscriber
+                 Référence & Intitulé
                 </span>
                 <span class="kt-table-col-sort">
                 </span>
@@ -2351,7 +2340,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
               <th class="min-w-[200px]">
                <span class="kt-table-col">
                 <span class="kt-table-col-label">
-                 Products
+                 Domaines
                 </span>
                 <span class="kt-table-col-sort">
                 </span>
@@ -2360,7 +2349,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
               <th class="min-w-[175px]">
                <span class="kt-table-col">
                 <span class="kt-table-col-label">
-                 License
+                 Statut
                 </span>
                 <span class="kt-table-col-sort">
                 </span>
@@ -2369,7 +2358,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
               <th class="min-w-[175px]">
                <span class="kt-table-col">
                 <span class="kt-table-col-label">
-                 Last Payment
+                 Date Limite
                 </span>
                 <span class="kt-table-col-sort">
                 </span>
@@ -2378,7 +2367,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
               <th class="min-w-[137px]">
                <span class="kt-table-col">
                 <span class="kt-table-col-label">
-                 Enforce 2FA
+                 Visibilité
                 </span>
                 <span class="kt-table-col-sort">
                 </span>
@@ -2387,7 +2376,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
               <th class="w-28 text-center">
                <span class="kt-table-col">
                 <span class="kt-table-col-label">
-                 Invoices
+                 TDR / Dossier
                 </span>
                 <span class="kt-table-col-sort">
                 </span>
@@ -2402,1610 +2391,177 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
               </td>
               <td>
                <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-3.png">
-                 <div class="flex flex-col">
-                  <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                   Tyler Hero
-                  </a>
-                  <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                   tyler.hero@gmail.com
-                  </a>
-                 </div>
-                </img>
+                <div class="flex items-center justify-center shrink-0 rounded-full bg-accent/60 border border-border size-10">
+                 <i class="ki-filled ki-briefcase text-primary text-xl"></i>
+                </div>
+                <div class="flex flex-col">
+                 <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="ami-details.html">
+                  AMI N°001/2026
+                 </a>
+                 <span class="text-sm text-secondary-foreground font-normal">
+                  Sélection d'un cabinet d'audit financier
+                 </span>
+                </div>
                </div>
               </td>
               <td>
                <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 NFT
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 Artwork
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 Widget
-                </span>
+                <span class="kt-badge kt-badge-outline">Audit</span>
+                <span class="kt-badge kt-badge-outline">Finance</span>
                </div>
               </td>
               <td>
                <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Premium
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                 4 months left
-                </span>
+                <span class="text-sm text-success font-medium">Publié</span>
+                <span class="text-xs text-secondary-foreground">Expire dans 15 jours</span>
                </div>
               </td>
               <td class="text-foreground font-medium">
-               6 Aug, 2024
+               30 Sept, 2026
               </td>
               <td>
                <input checked="" class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
               </td>
               <td>
                <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
+                <a class="kt-link kt-link-underlined kt-link-dashed" href="#">
+                 Télécharger PDF
                 </a>
                </div>
               </td>
              </tr>
              <tr>
               <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="2">
-               </input>
+               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="2"/>
               </td>
               <td>
                <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-1.png">
-                 <div class="flex flex-col">
-                  <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                   Esther Howard
-                  </a>
-                  <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                   esther.howard@gmail.com
-                  </a>
-                 </div>
-                </img>
+                <div class="flex items-center justify-center shrink-0 rounded-full bg-accent/60 border border-border size-10">
+                 <i class="ki-filled ki-building text-primary text-xl"></i>
+                </div>
+                <div class="flex flex-col">
+                 <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
+                  AMI N°042/2026
+                 </a>
+                 <span class="text-sm text-secondary-foreground font-normal">
+                  Supervision des travaux routiers
+                 </span>
+                </div>
                </div>
               </td>
               <td>
                <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 Design
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 Template
-                </span>
+                <span class="kt-badge kt-badge-outline">BTP</span>
+                <span class="kt-badge kt-badge-outline">Ingénierie</span>
                </div>
               </td>
               <td>
                <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Trial
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                 16 days left
-                </span>
+                <span class="text-sm text-success font-medium">Publié</span>
+                <span class="text-xs text-secondary-foreground">Expire dans 3 jours</span>
                </div>
               </td>
               <td class="text-foreground font-medium">
-               21 Apr, 2024
-              </td>
-              <td>
-               <input class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
-              </td>
-              <td>
-               <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
-               </div>
-              </td>
-             </tr>
-             <tr>
-              <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="3">
-               </input>
-              </td>
-              <td>
-               <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-11.png">
-                 <div class="flex flex-col">
-                  <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                   Jacob Jones
-                  </a>
-                  <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                   jacob.jones@gmail.com
-                  </a>
-                 </div>
-                </img>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 App
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 Plugin
-                </span>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Premium
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                 2 months left
-                </span>
-               </div>
-              </td>
-              <td class="text-foreground font-medium">
-               14 Mar, 2024
+               18 Sept, 2026
               </td>
               <td>
                <input checked="" class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
               </td>
               <td>
                <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
+                <a class="kt-link kt-link-underlined kt-link-dashed" href="#">
+                 Télécharger PDF
                 </a>
                </div>
               </td>
              </tr>
              <tr>
               <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="4">
-               </input>
+               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="3"/>
               </td>
               <td>
                <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-2.png">
-                 <div class="flex flex-col">
-                  <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                   Cody Fisher
-                  </a>
-                  <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                   cody.fisher@gmail.com
-                  </a>
-                 </div>
-                </img>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 Template
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 NFT
-                </span>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Standard
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                </span>
-               </div>
-              </td>
-              <td class="text-foreground font-medium">
-               20 Apr, 2024
-              </td>
-              <td>
-               <input checked="" class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
-              </td>
-              <td>
-               <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
-               </div>
-              </td>
-             </tr>
-             <tr>
-              <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="5">
-               </input>
-              </td>
-              <td>
-               <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-5.png">
-                 <div class="flex flex-col">
-                  <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                   Leslie Alexander
-                  </a>
-                  <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                   leslie.alexander@gmail.com
-                  </a>
-                 </div>
-                </img>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 Artwork
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 App
-                </span>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Premium
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                 6 months left
-                </span>
-               </div>
-              </td>
-              <td class="text-foreground font-medium">
-               29 Jan, 2024
-              </td>
-              <td>
-               <input class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
-              </td>
-              <td>
-               <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
-               </div>
-              </td>
-             </tr>
-             <tr>
-              <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="6">
-               </input>
-              </td>
-              <td>
-               <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-4.png"/>
+                <div class="flex items-center justify-center shrink-0 rounded-full bg-accent/60 border border-border size-10">
+                 <i class="ki-filled ki-document text-primary text-xl"></i>
+                </div>
                 <div class="flex flex-col">
                  <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                  Robert Fox
+                  AMI N°018/2026
                  </a>
-                 <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                  robert.fox@gmail.com
-                 </a>
+                 <span class="text-sm text-secondary-foreground font-normal">
+                  Étude d'impact environnemental et social
+                 </span>
                 </div>
                </div>
               </td>
               <td>
                <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 Design
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 Widget
-                </span>
+                <span class="kt-badge kt-badge-outline">Environnement</span>
+                <span class="kt-badge kt-badge-outline">Études</span>
                </div>
               </td>
               <td>
                <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Trial
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                 5 days left
-                </span>
+                <span class="text-sm text-warning font-medium">Clôturé</span>
+                <span class="text-xs text-secondary-foreground">Dépouillement en cours</span>
                </div>
               </td>
               <td class="text-foreground font-medium">
-               17 Mar, 2024
+               01 Sept, 2026
               </td>
               <td>
-               <input class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
+               <input class="kt-switch kt-switch-sm" name="check" type="checkbox" value="0"/>
               </td>
               <td>
                <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
+                <a class="kt-link kt-link-underlined kt-link-dashed" href="#">
+                 Télécharger PDF
                 </a>
                </div>
               </td>
              </tr>
              <tr>
               <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="7">
-               </input>
+               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="4"/>
               </td>
               <td>
                <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-20.png"/>
+                <div class="flex items-center justify-center shrink-0 rounded-full bg-accent/60 border border-border size-10">
+                 <i class="ki-filled ki-technology-2 text-primary text-xl"></i>
+                </div>
                 <div class="flex flex-col">
                  <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                  Guy Hawkins
+                  AMI N°089/2026
                  </a>
-                 <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                  guy.hawkins@gmail.com
-                 </a>
+                 <span class="text-sm text-secondary-foreground font-normal">
+                  Développement du système d'information intégré
+                 </span>
                 </div>
                </div>
               </td>
               <td>
                <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 Plugin
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 Artwork
-                </span>
+                <span class="kt-badge kt-badge-outline">IT</span>
+                <span class="kt-badge kt-badge-outline">Logiciel</span>
                </div>
               </td>
               <td>
                <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Standard
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                </span>
+                <span class="text-sm text-secondary-foreground font-medium">Brouillon</span>
+                <span class="text-xs text-secondary-foreground">En attente de validation</span>
                </div>
               </td>
               <td class="text-foreground font-medium">
-               20 Jul, 2024
+               -
               </td>
               <td>
-               <input class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
-              </td>
-              <td>
-               <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
-               </div>
-              </td>
-             </tr>
-             <tr>
-              <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="8">
-               </input>
-              </td>
-              <td>
-               <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-23.png"/>
-                <div class="flex flex-col">
-                 <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                  Theresa Webb
-                 </a>
-                 <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                  theresa.webb@gmail.com
-                 </a>
-                </div>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 NFT
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 Template
-                </span>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Trial
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                 2 days left
-                </span>
-               </div>
-              </td>
-              <td class="text-foreground font-medium">
-               06 May, 2024
-              </td>
-              <td>
-               <input checked="" class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
+               <input class="kt-switch kt-switch-sm" name="check" type="checkbox" value="0"/>
               </td>
               <td>
                <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
-               </div>
-              </td>
-             </tr>
-             <tr>
-              <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="9">
-               </input>
-              </td>
-              <td>
-               <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-22.png"/>
-                <div class="flex flex-col">
-                 <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                  Marvin McKinney
-                 </a>
-                 <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                  marvin.mckenney@gmail.com
-                 </a>
-                </div>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 Widget
+                <span class="text-sm text-secondary-foreground font-normal">
+                 Non disponible
                 </span>
-                <span class="kt-badge kt-badge-outline">
-                 App
-                </span>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Premium
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                 1 months left
-                </span>
-               </div>
-              </td>
-              <td class="text-foreground font-medium">
-               16 Apr, 2024
-              </td>
-              <td>
-               <input checked="" class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
-              </td>
-              <td>
-               <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
-               </div>
-              </td>
-             </tr>
-             <tr>
-              <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="10">
-               </input>
-              </td>
-              <td>
-               <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-18.png"/>
-                <div class="flex flex-col">
-                 <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                  Ronald Richards
-                 </a>
-                 <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                  ronald.richards@gmail.com
-                 </a>
-                </div>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 Artwork
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 Design
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 Plugin
-                </span>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Premium
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                 3 months left
-                </span>
-               </div>
-              </td>
-              <td class="text-foreground font-medium">
-               15 Jun, 2024
-              </td>
-              <td>
-               <input class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
-              </td>
-              <td>
-               <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
-               </div>
-              </td>
-             </tr>
-             <tr>
-              <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="11">
-               </input>
-              </td>
-              <td>
-               <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-6.png"/>
-                <div class="flex flex-col">
-                 <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                  William Wilson
-                 </a>
-                 <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                  william.wilson@gmail.com
-                 </a>
-                </div>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 App
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 Design
-                </span>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Trial
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                 10 days left
-                </span>
-               </div>
-              </td>
-              <td class="text-foreground font-medium">
-               28 Jul, 2024
-              </td>
-              <td>
-               <input checked="" class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
-              </td>
-              <td>
-               <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
-               </div>
-              </td>
-             </tr>
-             <tr>
-              <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="12">
-               </input>
-              </td>
-              <td>
-               <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-7.png"/>
-                <div class="flex flex-col">
-                 <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                  Sophia Anderson
-                 </a>
-                 <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                  sophia.anderson@gmail.com
-                 </a>
-                </div>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 Plugin
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 Template
-                </span>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Standard
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                </span>
-               </div>
-              </td>
-              <td class="text-foreground font-medium">
-               12 Aug, 2024
-              </td>
-              <td>
-               <input class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
-              </td>
-              <td>
-               <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
-               </div>
-              </td>
-             </tr>
-             <tr>
-              <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="13">
-               </input>
-              </td>
-              <td>
-               <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-8.png"/>
-                <div class="flex flex-col">
-                 <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                  Mason Taylor
-                 </a>
-                 <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                  mason.taylor@gmail.com
-                 </a>
-                </div>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 NFT
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 Artwork
-                </span>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Premium
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                 5 months left
-                </span>
-               </div>
-              </td>
-              <td class="text-foreground font-medium">
-               09 Sep, 2024
-              </td>
-              <td>
-               <input checked="" class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
-              </td>
-              <td>
-               <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
-               </div>
-              </td>
-             </tr>
-             <tr>
-              <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="14">
-               </input>
-              </td>
-              <td>
-               <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-9.png"/>
-                <div class="flex flex-col">
-                 <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                  Isabella Lee
-                 </a>
-                 <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                  isabella.lee@gmail.com
-                 </a>
-                </div>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 App
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 Widget
-                </span>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Trial
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                 8 days left
-                </span>
-               </div>
-              </td>
-              <td class="text-foreground font-medium">
-               22 Oct, 2024
-              </td>
-              <td>
-               <input class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
-              </td>
-              <td>
-               <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
-               </div>
-              </td>
-             </tr>
-             <tr>
-              <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="15">
-               </input>
-              </td>
-              <td>
-               <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-10.png"/>
-                <div class="flex flex-col">
-                 <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                  James Martinez
-                 </a>
-                 <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                  james.martinez@gmail.com
-                 </a>
-                </div>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 Template
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 Design
-                </span>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Standard
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                </span>
-               </div>
-              </td>
-              <td class="text-foreground font-medium">
-               15 Nov, 2024
-              </td>
-              <td>
-               <input checked="" class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
-              </td>
-              <td>
-               <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
-               </div>
-              </td>
-             </tr>
-             <tr>
-              <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="16">
-               </input>
-              </td>
-              <td>
-               <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-12.png"/>
-                <div class="flex flex-col">
-                 <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                  Emily Thomas
-                 </a>
-                 <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                  emily.thomas@gmail.com
-                 </a>
-                </div>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 Artwork
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 Plugin
-                </span>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Premium
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                 7 months left
-                </span>
-               </div>
-              </td>
-              <td class="text-foreground font-medium">
-               03 Dec, 2024
-              </td>
-              <td>
-               <input class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
-              </td>
-              <td>
-               <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
-               </div>
-              </td>
-             </tr>
-             <tr>
-              <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="17">
-               </input>
-              </td>
-              <td>
-               <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-13.png"/>
-                <div class="flex flex-col">
-                 <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                  Benjamin Harris
-                 </a>
-                 <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                  benjamin.harris@gmail.com
-                 </a>
-                </div>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 NFT
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 App
-                </span>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Trial
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                 12 days left
-                </span>
-               </div>
-              </td>
-              <td class="text-foreground font-medium">
-               21 Jan, 2024
-              </td>
-              <td>
-               <input checked="" class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
-              </td>
-              <td>
-               <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
-               </div>
-              </td>
-             </tr>
-             <tr>
-              <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="18">
-               </input>
-              </td>
-              <td>
-               <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-14.png"/>
-                <div class="flex flex-col">
-                 <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                  Charlotte Young
-                 </a>
-                 <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                  charlotte.young@gmail.com
-                 </a>
-                </div>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 Template
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 Plugin
-                </span>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Standard
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                </span>
-               </div>
-              </td>
-              <td class="text-foreground font-medium">
-               10 Feb, 2024
-              </td>
-              <td>
-               <input class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
-              </td>
-              <td>
-               <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
-               </div>
-              </td>
-             </tr>
-             <tr>
-              <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="19">
-               </input>
-              </td>
-              <td>
-               <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-15.png"/>
-                <div class="flex flex-col">
-                 <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                  Henry Clark
-                 </a>
-                 <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                  henry.clark@gmail.com
-                 </a>
-                </div>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 Design
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 Widget
-                </span>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Premium
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                 9 months left
-                </span>
-               </div>
-              </td>
-              <td class="text-foreground font-medium">
-               08 Mar, 2024
-              </td>
-              <td>
-               <input checked="" class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
-              </td>
-              <td>
-               <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
-               </div>
-              </td>
-             </tr>
-             <tr>
-              <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="20">
-               </input>
-              </td>
-              <td>
-               <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-16.png"/>
-                <div class="flex flex-col">
-                 <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                  Amelia Lewis
-                 </a>
-                 <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                  amelia.lewis@gmail.com
-                 </a>
-                </div>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 Artwork
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 Template
-                </span>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Trial
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                 3 days left
-                </span>
-               </div>
-              </td>
-              <td class="text-foreground font-medium">
-               26 Apr, 2024
-              </td>
-              <td>
-               <input class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
-              </td>
-              <td>
-               <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
-               </div>
-              </td>
-             </tr>
-             <tr>
-              <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="21">
-               </input>
-              </td>
-              <td>
-               <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-17.png"/>
-                <div class="flex flex-col">
-                 <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                  Lucas Walker
-                 </a>
-                 <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                  lucas.walker@gmail.com
-                 </a>
-                </div>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 App
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 Plugin
-                </span>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Standard
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                </span>
-               </div>
-              </td>
-              <td class="text-foreground font-medium">
-               19 May, 2024
-              </td>
-              <td>
-               <input checked="" class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
-              </td>
-              <td>
-               <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
-               </div>
-              </td>
-             </tr>
-             <tr>
-              <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="22">
-               </input>
-              </td>
-              <td>
-               <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-19.png"/>
-                <div class="flex flex-col">
-                 <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                  Grace Allen
-                 </a>
-                 <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                  grace.allen@gmail.com
-                 </a>
-                </div>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 Widget
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 Design
-                </span>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Premium
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                 11 months left
-                </span>
-               </div>
-              </td>
-              <td class="text-foreground font-medium">
-               03 Jun, 2024
-              </td>
-              <td>
-               <input class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
-              </td>
-              <td>
-               <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
-               </div>
-              </td>
-             </tr>
-             <tr>
-              <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="23">
-               </input>
-              </td>
-              <td>
-               <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-21.png"/>
-                <div class="flex flex-col">
-                 <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                  Jack Harris
-                 </a>
-                 <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                  jack.harris@gmail.com
-                 </a>
-                </div>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 NFT
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 Template
-                </span>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Trial
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                 9 days left
-                </span>
-               </div>
-              </td>
-              <td class="text-foreground font-medium">
-               25 Jul, 2024
-              </td>
-              <td>
-               <input checked="" class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
-              </td>
-              <td>
-               <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
-               </div>
-              </td>
-             </tr>
-             <tr>
-              <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="24">
-               </input>
-              </td>
-              <td>
-               <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-24.png"/>
-                <div class="flex flex-col">
-                 <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                  Aiden King
-                 </a>
-                 <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                  aiden.king@gmail.com
-                 </a>
-                </div>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 App
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 Artwork
-                </span>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Standard
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                </span>
-               </div>
-              </td>
-              <td class="text-foreground font-medium">
-               02 Aug, 2024
-              </td>
-              <td>
-               <input class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
-              </td>
-              <td>
-               <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
-               </div>
-              </td>
-             </tr>
-             <tr>
-              <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="25">
-               </input>
-              </td>
-              <td>
-               <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-25.png"/>
-                <div class="flex flex-col">
-                 <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                  Avery Green
-                 </a>
-                 <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                  avery.green@gmail.com
-                 </a>
-                </div>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 Plugin
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 Widget
-                </span>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Premium
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                 10 months left
-                </span>
-               </div>
-              </td>
-              <td class="text-foreground font-medium">
-               15 Sep, 2024
-              </td>
-              <td>
-               <input checked="" class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
-              </td>
-              <td>
-               <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
-               </div>
-              </td>
-             </tr>
-             <tr>
-              <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="26">
-               </input>
-              </td>
-              <td>
-               <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-26.png"/>
-                <div class="flex flex-col">
-                 <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                  Ella White
-                 </a>
-                 <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                  ella.white@gmail.com
-                 </a>
-                </div>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 NFT
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 Template
-                </span>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Trial
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                 14 days left
-                </span>
-               </div>
-              </td>
-              <td class="text-foreground font-medium">
-               09 Oct, 2024
-              </td>
-              <td>
-               <input class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
-              </td>
-              <td>
-               <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
-               </div>
-              </td>
-             </tr>
-             <tr>
-              <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="27">
-               </input>
-              </td>
-              <td>
-               <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-27.png"/>
-                <div class="flex flex-col">
-                 <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                  Henry King
-                 </a>
-                 <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                  henry.king@gmail.com
-                 </a>
-                </div>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 Design
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 App
-                </span>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Standard
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                </span>
-               </div>
-              </td>
-              <td class="text-foreground font-medium">
-               20 Nov, 2024
-              </td>
-              <td>
-               <input checked="" class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
-              </td>
-              <td>
-               <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
-               </div>
-              </td>
-             </tr>
-             <tr>
-              <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="28">
-               </input>
-              </td>
-              <td>
-               <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-28.png"/>
-                <div class="flex flex-col">
-                 <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                  Olivia Green
-                 </a>
-                 <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                  olivia.green@gmail.com
-                 </a>
-                </div>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 Plugin
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 Artwork
-                </span>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Premium
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                 8 months left
-                </span>
-               </div>
-              </td>
-              <td class="text-foreground font-medium">
-               05 Dec, 2024
-              </td>
-              <td>
-               <input class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
-              </td>
-              <td>
-               <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
-               </div>
-              </td>
-             </tr>
-             <tr>
-              <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="29">
-               </input>
-              </td>
-              <td>
-               <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-29.png"/>
-                <div class="flex flex-col">
-                 <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                  Mason Lewis
-                 </a>
-                 <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                  mason.lewis@gmail.com
-                 </a>
-                </div>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 Template
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 Widget
-                </span>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Trial
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                 7 days left
-                </span>
-               </div>
-              </td>
-              <td class="text-foreground font-medium">
-               22 Jan, 2024
-              </td>
-              <td>
-               <input checked="" class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
-              </td>
-              <td>
-               <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
-               </div>
-              </td>
-             </tr>
-             <tr>
-              <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="30">
-               </input>
-              </td>
-              <td>
-               <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-30.png"/>
-                <div class="flex flex-col">
-                 <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                  Sophia Lee
-                 </a>
-                 <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                  sophia.lee@gmail.com
-                 </a>
-                </div>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 Design
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 Plugin
-                </span>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Standard
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                </span>
-               </div>
-              </td>
-              <td class="text-foreground font-medium">
-               11 Feb, 2024
-              </td>
-              <td>
-               <input class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
-              </td>
-              <td>
-               <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
-               </div>
-              </td>
-             </tr>
-             <tr>
-              <td class="text-center">
-               <input class="kt-checkbox kt-checkbox-sm" data-kt-datatable-row-check="true" type="checkbox" value="31">
-               </input>
-              </td>
-              <td>
-               <div class="flex items-center gap-2.5">
-                <img alt="" class="rounded-full size-7 shrink-0" src="assets/media/avatars/300-31.png"/>
-                <div class="flex flex-col">
-                 <a class="text-sm font-medium text-mono hover:text-primary mb-px" href="#">
-                  Matthew Martinez
-                 </a>
-                 <a class="text-sm text-secondary-foreground font-normal hover:text-primary" href="#">
-                  matthew.martinez@gmail.com
-                 </a>
-                </div>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-wrap gap-1.5">
-                <span class="kt-badge kt-badge-outline">
-                 NFT
-                </span>
-                <span class="kt-badge kt-badge-outline">
-                 App
-                </span>
-               </div>
-              </td>
-              <td>
-               <div class="flex flex-col">
-                <span class="text-sm text-foreground font-medium">
-                 Premium
-                </span>
-                <span class="text-xs text-secondary-foreground">
-                 6 months left
-                </span>
-               </div>
-              </td>
-              <td class="text-foreground font-medium">
-               28 Mar, 2024
-              </td>
-              <td>
-               <input checked="" class="kt-switch kt-switch-sm" name="check" type="checkbox" value="1"/>
-              </td>
-              <td>
-               <div class="flex justify-center">
-                <a class="kt-link kt-link-underlined kt-link-dashed" href="">
-                 Download
-                </a>
                </div>
               </td>
              </tr>
