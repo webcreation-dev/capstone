@@ -469,12 +469,6 @@
   .left-\[250px\] {
     left: 250px;
   }
-  .left-\[450px\] {
-    left: 450px;
-  }
-  .left-\[530px\] {
-    left: 530px;
-  }
   .left-auto {
     left: auto;
   }
@@ -496,9 +490,6 @@
   .z-40 {
     z-index: 40;
   }
-  .z-\[11\] {
-    z-index: 11;
-  }
   .z-\[12\] {
     z-index: 12;
   }
@@ -507,12 +498,6 @@
   }
   .z-\[14\] {
     z-index: 14;
-  }
-  .z-\[30\] {
-    z-index: 30;
-  }
-  .z-\[31\] {
-    z-index: 31;
   }
   .z-\[32\] {
     z-index: 32;
@@ -1480,9 +1465,6 @@
   .max-w-\[60\%\] {
     max-width: 60%;
   }
-  .max-w-\[80px\] {
-    max-width: 80px;
-  }
   .max-w-\[90\%\] {
     max-width: 90%;
   }
@@ -1596,9 +1578,6 @@
   }
   .min-w-72 {
     min-width: calc(var(--spacing) * 72);
-  }
-  .min-w-\[80px\] {
-    min-width: 80px;
   }
   .min-w-\[98px\] {
     min-width: 98px;
@@ -2029,6 +2008,9 @@
   }
   .rounded-md {
     border-radius: calc(var(--radius) - 2px);
+  }
+  .rounded-none {
+    border-radius: 0;
   }
   .rounded-none\! {
     border-radius: 0 !important;
