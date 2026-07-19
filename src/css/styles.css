@@ -6,6 +6,7 @@
 @source '../../node_modules/@keenthemes/ktui/src/components/alert/';
 @source '../../node_modules/@keenthemes/ktui/src/components/toast/';
 @source '../../node_modules/@keenthemes/ktui/src/components/rating/';
+@source '../../dist/html/**/*.html';
 
 /* Theme configs */
 @import "./config.ktui";

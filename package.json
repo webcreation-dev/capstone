@@ -15,7 +15,7 @@
         "dev": "npm run build:css:watch & webpack --env watch",
         "build:js": "webpack",
         "build:css": "npx @tailwindcss/cli -i ./src/css/styles.css -o ./dist/assets/css/styles.css && npx postcss ./dist/assets/css/styles.css --replace --use postcss-nesting --no-map",
-        "build:css:watch": "chokidar \"src/**/*\" -c \"npm run build:css\" --initial",
+        "build:css:watch": "chokidar \"src/**/*\" \"dist/html/**/*\" -c \"npm run build:css\" --initial",
         "build": "npm run build:css && npm run build:js",
         "build:prod": "npx @tailwindcss/cli -i ./src/css/styles.css -o ./dist/assets/css/styles.css --minify && npx postcss ./dist/assets/css/styles.css --replace --use postcss-nesting --no-map && webpack --env production",
         "lint": "npx eslint src/core --ext .ts"
