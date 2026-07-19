@@ -2116,6 +2116,9 @@
     --tw-border-style: none;
     border-style: none;
   }
+  .border-black {
+    border-color: var(--color-black);
+  }
   .border-black\/10\! {
     border-color: color-mix(in srgb, #000 10%, transparent) !important;
   }
@@ -2191,9 +2194,6 @@
       border-color: color-mix(in oklab, var(--primary) 30%, transparent);
   }
     }
-  .border-rose-500 {
-    border-color: var(--color-rose-500);
-  }
   .border-transparent {
     border-color: transparent;
   }
@@ -2439,9 +2439,6 @@
       background-color: color-mix(in oklab, var(--color-red-50) 30%, transparent);
   }
     }
-  .bg-rose-700 {
-    background-color: var(--color-rose-700);
-  }
   .bg-transparent {
     background-color: transparent;
   }
