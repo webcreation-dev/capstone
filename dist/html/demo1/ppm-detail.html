@@ -43,6 +43,43 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
     <link href="assets/vendors/apexcharts/apexcharts.css" rel="stylesheet" />
     <link href="assets/vendors/keenicons/styles.bundle.css" rel="stylesheet" />
     <link href="assets/css/styles.css" rel="stylesheet" />
+
+    <style>
+        /* PPM Table - Grid lines */
+        #ppm-table tbody td {
+            border-right: 1px solid #e5e7eb;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 8px 12px;
+        }
+
+        /* Sticky td cells keep their background solid */
+        #ppm-table tbody td.sticky {
+            background-color: white;
+        }
+
+        /* Hover per row - JS driven, removes group-hover conflicts */
+        #ppm-table tbody tr.row-hovered td:not(.sticky) {
+            background-color: #f0f9ff !important;
+        }
+        #ppm-table tbody tr.row-hovered td.sticky {
+            background-color: #e0f2fe !important;
+        }
+
+        /* Lot separator - thick bottom border on last row of each lot */
+        #ppm-table tbody tr.lot-end td {
+            border-bottom: 2px solid #6b7280 !important;
+        }
+
+        /* SPM separator - even thicker border between SPM blocks */
+        #ppm-table tbody tr.spm-end td {
+            border-bottom: 3px solid #374151 !important;
+        }
+
+        /* Vertical separator after last frozen column (Description du Package) */
+        #ppm-table tbody td.col-separator {
+            border-right: 2px solid #9ca3af !important;
+        }
+    </style>
 </head>
 
 <body
@@ -111,65 +148,65 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                 <!-- Main Layout Container (Table + Timeline Side by Side) -->
                 <div class="kt-container-fluid flex items-start gap-5 transition-all duration-300 relative">
                     <!-- Main Table Container -->
-                    <div class="kt-card grow min-w-0 overflow-hidden rounded-none" style="border-radius: 0 !important;">
+                    <div class="kt-card grow min-w-0 overflow-hidden rounded-[20px]" style="border-radius: 20px !important;">
                         <div class="kt-card-header justify-center">
                             <h3 class="kt-card-title text-center">PROJET D'AMENAGEMENT DE LA ROUTE DJOUGOU-PEHUNCO-KEROU-BANIKOARA
                             </h3>
                         </div>
                         <div class="kt-card-content p-0">
                             <div class="overflow-x-auto">
-                                <table
+                                <table id="ppm-table"
                                     class="kt-table table-auto kt-table-hover align-middle whitespace-nowrap border-separate border-spacing-0">
-                                    <thead class="bg-light">
-                                        <!-- Super Header -->
-                                        <tr>
+                                    <thead>
+                                        <!-- Super Header - Niveau 1 (fond gris foncé, texte blanc) -->
+                                        <tr class="bg-rose-700 text-white">
                                             <th colspan="3"
-                                                class="sticky left-0 top-0 bg-white z-[35] border-r border-b text-center font-bold shadow-[2px_0_4px_rgba(0,0,0,0.1)]">
+                                                class="sticky left-0 top-0 bg-rose-700 z-[35] border-r-2 border-b-2 border-gray-500 text-center font-bold py-3 px-3 text-sm uppercase tracking-wide">
                                                 Informations de Base</th>
-                                            <th colspan="7" class="border-b text-center font-bold border-r">Détails
+                                            <th colspan="7" class="border-b-2 border-r-2 border-gray-500 text-center font-bold py-3 px-3 text-sm uppercase tracking-wide">Détails
                                                 Techniques</th>
-                                            <th colspan="2" class="border-b text-center font-bold">Dossier d'Appel
+                                            <th colspan="2" class="border-b-2 border-r border-gray-500 text-center font-bold py-3 px-3 text-sm uppercase tracking-wide">Dossier d'Appel
                                                 d'Offres</th>
-                                            <th colspan="2" class="border-b text-center font-bold">Évaluation des Offres
+                                            <th colspan="2" class="border-b-2 border-r border-gray-500 text-center font-bold py-3 px-3 text-sm uppercase tracking-wide">Évaluation des Offres
                                             </th>
-                                            <th colspan="3" class="border-b text-center font-bold border-r">Finalisation
+                                            <th colspan="3" class="border-b-2 border-r-2 border-gray-500 text-center font-bold py-3 px-3 text-sm uppercase tracking-wide">Finalisation
                                                 du Contrat</th>
                                         </tr>
-                                        <!-- Columns Header -->
-                                        <tr>
+                                        <!-- Columns Header - Niveau 2 (fond gris moyen) -->
+                                        <tr class="bg-gray-100 text-gray-700">
                                             <th
-                                                class="sticky left-0 top-0 bg-white z-[34] w-[150px] border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.1)]">
+                                                class="sticky left-0 top-0 bg-gray-100 z-[34] w-[150px] border-r-2 border-b-2 border-gray-300 py-2.5 px-3 text-xs font-semibold uppercase">
                                                 SPM</th>
                                             <th
-                                                class="sticky left-[150px] top-0 bg-white z-[33] w-[100px] border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.1)]">
+                                                class="sticky left-[150px] top-0 bg-gray-100 z-[33] w-[100px] border-r border-b-2 border-gray-300 py-2.5 px-3 text-xs font-semibold uppercase">
                                                 N° Package</th>
                                             <th
-                                                class="sticky left-[250px] top-0 bg-white z-[32] w-[200px] min-w-[200px] max-w-[200px] whitespace-normal border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.1)]">
+                                                class="sticky left-[250px] top-0 bg-gray-100 z-[32] w-[200px] min-w-[200px] max-w-[200px] whitespace-normal border-r-2 border-b-2 border-gray-400 py-2.5 px-3 text-xs font-semibold uppercase">
                                                 Description du Package</th>
                                             <th
-                                                class="bg-white w-[80px] border-r border-gray-300">
+                                                class="bg-gray-100 w-[80px] border-r border-b-2 border-gray-300 py-2.5 px-3 text-xs font-semibold uppercase">
                                                 Lot</th>
                                             <th
-                                                class="bg-white min-w-[200px] whitespace-normal border-r border-gray-300">
+                                                class="bg-gray-100 min-w-[200px] whitespace-normal border-r-2 border-b-2 border-gray-300 py-2.5 px-3 text-xs font-semibold uppercase">
                                                 Description du Lot</th>
 
-                                            <th class="min-w-[180px]">N° Appel d'Offres émis</th>
-                                            <th class="min-w-[200px]">Montant forfaitaire ou DQE</th>
-                                            <th class="min-w-[150px]">Coût estimatif</th>
-                                            <th class="min-w-[150px]">Mode de passation</th>
-                                            <th class="min-w-[150px]">Type de Qualification</th>
-                                            <th class="min-w-[150px]">Contrôle et Audit</th>
-                                            <th class="min-w-[150px] border-r">Type de Suivi</th>
+                                            <th class="min-w-[180px] border-r border-b-2 border-gray-300 py-2.5 px-3 text-xs font-semibold uppercase">N° Appel d'Offres émis</th>
+                                            <th class="min-w-[200px] border-r border-b-2 border-gray-300 py-2.5 px-3 text-xs font-semibold uppercase">Montant forfaitaire ou DQE</th>
+                                            <th class="min-w-[150px] border-r border-b-2 border-gray-300 py-2.5 px-3 text-xs font-semibold uppercase">Coût estimatif</th>
+                                            <th class="min-w-[150px] border-r border-b-2 border-gray-300 py-2.5 px-3 text-xs font-semibold uppercase">Mode de passation</th>
+                                            <th class="min-w-[150px] border-r border-b-2 border-gray-300 py-2.5 px-3 text-xs font-semibold uppercase">Type de Qualification</th>
+                                            <th class="min-w-[150px] border-r border-b-2 border-gray-300 py-2.5 px-3 text-xs font-semibold uppercase">Contrôle et Audit</th>
+                                            <th class="min-w-[150px] border-r-2 border-b-2 border-gray-300 py-2.5 px-3 text-xs font-semibold uppercase">Type de Suivi</th>
 
-                                            <th class="min-w-[150px]">Date de soumission</th>
-                                            <th class="min-w-[150px]">Date d'Avis (NO)</th>
+                                            <th class="min-w-[150px] border-r border-b-2 border-gray-300 py-2.5 px-3 text-xs font-semibold uppercase">Date de soumission</th>
+                                            <th class="min-w-[150px] border-r border-b-2 border-gray-300 py-2.5 px-3 text-xs font-semibold uppercase">Date d'Avis (NO)</th>
 
-                                            <th class="min-w-[150px]">Date d'Ouverture</th>
-                                            <th class="min-w-[150px]">Rapport d'évaluation</th>
+                                            <th class="min-w-[150px] border-r border-b-2 border-gray-300 py-2.5 px-3 text-xs font-semibold uppercase">Date d'Ouverture</th>
+                                            <th class="min-w-[150px] border-r border-b-2 border-gray-300 py-2.5 px-3 text-xs font-semibold uppercase">Rapport d'évaluation</th>
 
-                                            <th class="min-w-[150px]">Date d'Attribution</th>
-                                            <th class="min-w-[150px]">Signature Contrat</th>
-                                            <th class="min-w-[150px] border-r">Montant (FCFA)</th>
+                                            <th class="min-w-[150px] border-r border-b-2 border-gray-300 py-2.5 px-3 text-xs font-semibold uppercase">Date d'Attribution</th>
+                                            <th class="min-w-[150px] border-r border-b-2 border-gray-300 py-2.5 px-3 text-xs font-semibold uppercase">Signature Contrat</th>
+                                            <th class="min-w-[150px] border-r-2 border-b-2 border-gray-300 py-2.5 px-3 text-xs font-semibold uppercase">Montant (FCFA)</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -194,11 +231,11 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             </div>
 
                                             <!-- Colonnes sticky avec rowspan pour tout le SPM -->
-                                            <td class="sticky left-0 bg-white group-hover:bg-gray-50 z-[14] font-bold text-sm border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)] w-[150px] min-w-[150px] max-w-[150px]"
+                                            <td class="sticky left-0 bg-white group-hover:bg-gray-50 z-[14] font-bold text-sm border-r border-gray-300 w-[150px] min-w-[150px] max-w-[150px]"
                                                 rowspan="9">SPM-TRVX-1</td>
-                                            <td class="sticky left-[150px] bg-white group-hover:bg-gray-50 z-[13] font-bold border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)] w-[100px] min-w-[100px] max-w-[100px]"
+                                            <td class="sticky left-[150px] bg-white group-hover:bg-gray-50 z-[13] font-bold border-r border-gray-300 w-[100px] min-w-[100px] max-w-[100px]"
                                                 rowspan="9">T-01</td>
-                                            <td class="sticky left-[250px] bg-white group-hover:bg-gray-50 z-[12] font-medium border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)] w-[200px] min-w-[200px] max-w-[200px] whitespace-normal break-words"
+                                            <td class="sticky left-[250px] bg-white group-hover:bg-gray-50 z-[12] font-medium border-r-2 border-gray-400 w-[200px] min-w-[200px] max-w-[200px] whitespace-normal break-words col-separator"
                                                 rowspan="9">Travaux de construction du tronçon Djougou-Pehunco</td>
 
                                             <!-- Lot 1 avec rowspan pour toutes ses lignes de suivi -->
@@ -207,13 +244,13 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             <td class="bg-white group-hover:bg-gray-50 border-r border-gray-300 min-w-[200px] whitespace-normal break-words"
                                                 rowspan="5">Section A (0-50km)</td>
 
-                                            <!-- 6 colonnes techniques -->
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td><span class="kt-badge kt-badge-light-primary">AOO</span></td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
+                                            <!-- 6 colonnes techniques - rowspan couvre tout le lot -->
+                                            <td class="text-muted-foreground" rowspan="5">-</td>
+                                            <td class="text-muted-foreground" rowspan="5">-</td>
+                                            <td class="text-muted-foreground" rowspan="5">-</td>
+                                            <td rowspan="5"><span class="kt-badge kt-badge-light-primary">AOO</span></td>
+                                            <td class="text-muted-foreground" rowspan="5">-</td>
+                                            <td class="text-muted-foreground" rowspan="5">-</td>
 
                                             <!-- Colonne Type de Suivi -->
                                             <td class="border-r">
@@ -282,14 +319,6 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
 
                                         <!-- Lot 1 - Ligne 2 : Révisé 1 -->
                                         <tr class="group hover:bg-light/50 relative border-b border-gray-200">
-                                            <!-- 6 colonnes techniques -->
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td><span class="kt-badge kt-badge-light-primary">AOO</span></td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-
                                             <!-- Colonne Type de Suivi -->
                                             <td class="border-r">
                                                 <div class="flex items-center gap-2">
@@ -332,14 +361,6 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
 
                                         <!-- Lot 1 - Ligne 3 : Révisé 2 -->
                                         <tr class="group hover:bg-light/50 relative border-b border-gray-200">
-                                            <!-- 6 colonnes techniques -->
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td><span class="kt-badge kt-badge-light-primary">AOO</span></td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-
                                             <!-- Colonne Type de Suivi -->
                                             <td class="border-r">
                                                 <div class="flex items-center gap-2">
@@ -382,14 +403,6 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
 
                                         <!-- Lot 1 - Ligne 4 : Révisé 3 -->
                                         <tr class="group hover:bg-light/50 relative border-b border-gray-200">
-                                            <!-- 6 colonnes techniques -->
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td><span class="kt-badge kt-badge-light-primary">AOO</span></td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-
                                             <!-- Colonne Type de Suivi -->
                                             <td class="border-r">
                                                 <div class="flex items-center gap-2">
@@ -408,14 +421,6 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
 
                                         <!-- Lot 1 - Ligne 5 : Réel -->
                                         <tr class="group hover:bg-light/50 relative border-b border-gray-300">
-                                            <!-- 6 colonnes techniques -->
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td><span class="kt-badge kt-badge-light-primary">AOO</span></td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-
                                             <!-- Colonne Type de Suivi -->
                                             <td class="border-r">
                                                 <div class="flex items-center gap-2">
@@ -487,13 +492,14 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             <td class="bg-white group-hover:bg-gray-50 border-r border-gray-300 min-w-[200px] whitespace-normal break-words"
                                                 rowspan="4">Section B (50-100km)</td>
 
-                                            <!-- 6 colonnes techniques -->
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td><span class="kt-badge kt-badge-light-primary">AOO</span></td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
+
+                                            <!-- 6 colonnes techniques - rowspan couvre tout le lot -->
+                                            <td class="text-muted-foreground" rowspan="4">-</td>
+                                            <td class="text-muted-foreground" rowspan="4">-</td>
+                                            <td class="text-muted-foreground" rowspan="4">-</td>
+                                            <td rowspan="4"><span class="kt-badge kt-badge-light-primary">AOO</span></td>
+                                            <td class="text-muted-foreground" rowspan="4">-</td>
+                                            <td class="text-muted-foreground" rowspan="4">-</td>
 
                                             <!-- Colonne Type de Suivi -->
                                             <td class="border-r">
@@ -562,14 +568,6 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
 
                                         <!-- Lot 2 - Ligne 2 : Révisé 1 -->
                                         <tr class="group hover:bg-light/50 relative border-b border-gray-200">
-                                            <!-- 6 colonnes techniques -->
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td><span class="kt-badge kt-badge-light-primary">AOO</span></td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-
                                             <!-- Colonne Type de Suivi -->
                                             <td class="border-r">
                                                 <div class="flex items-center gap-2">
@@ -612,14 +610,6 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
 
                                         <!-- Lot 2 - Ligne 3 : Révisé 2 -->
                                         <tr class="group hover:bg-light/50 relative border-b border-gray-200">
-                                            <!-- 6 colonnes techniques -->
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td><span class="kt-badge kt-badge-light-primary">AOO</span></td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-
                                             <!-- Colonne Type de Suivi -->
                                             <td class="border-r">
                                                 <div class="flex items-center gap-2">
@@ -661,15 +651,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                         </tr>
 
                                         <!-- Lot 2 - Ligne 4 : Réel (dernière ligne du SPM) -->
-                                        <tr class="group hover:bg-light/50 relative border-b-2 border-gray-400">
-                                            <!-- 6 colonnes techniques -->
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td><span class="kt-badge kt-badge-light-primary">AOO</span></td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-
+                                        <tr class="group hover:bg-light/50 relative lot-end">
                                             <!-- Colonne Type de Suivi -->
                                             <td class="border-r">
                                                 <div class="flex items-center gap-2">
@@ -704,7 +686,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                         <!-- SPM 2 - BIENS-1 -->
                                         <!-- Ligne 1 : Plan -->
                                         <tr
-                                            class="group hover:bg-light/50 border-t-2 border-t-gray-200 relative border-b border-gray-200">
+                                            class="group hover:bg-light/50 border-t-2 border-t-gray-200 relative border-b border-gray-200 spm-start">
                                             <!-- Actions au hover -->
                                             <div
                                                 class="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity flex gap-1 bg-white shadow-lg rounded-lg p-1 z-[40] border border-border">
@@ -723,24 +705,24 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                             </div>
 
                                             <!-- Colonnes sticky avec rowspan -->
-                                            <td class="sticky left-0 bg-white group-hover:bg-gray-50 z-[14] font-bold text-sm border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)] w-[150px] min-w-[150px] max-w-[150px]"
+                                            <td class="sticky left-0 bg-white group-hover:bg-gray-50 z-[14] font-bold text-sm border-r border-gray-300 w-[150px] min-w-[150px] max-w-[150px]"
                                                 rowspan="3">SPM-BIENS-1</td>
-                                            <td class="sticky left-[150px] bg-white group-hover:bg-gray-50 z-[13] font-bold border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)] w-[100px] min-w-[100px] max-w-[100px]"
+                                            <td class="sticky left-[150px] bg-white group-hover:bg-gray-50 z-[13] font-bold border-r border-gray-300 w-[100px] min-w-[100px] max-w-[100px]"
                                                 rowspan="3">B-01</td>
-                                            <td class="sticky left-[250px] bg-white group-hover:bg-gray-50 z-[12] font-medium border-r border-gray-300 shadow-[2px_0_4px_rgba(0,0,0,0.05)] w-[200px] min-w-[200px] max-w-[200px] whitespace-normal break-words"
+                                            <td class="sticky left-[250px] bg-white group-hover:bg-gray-50 z-[12] font-medium border-r-2 border-gray-400 w-[200px] min-w-[200px] max-w-[200px] whitespace-normal break-words col-separator"
                                                 rowspan="3">Acquisition de matériel informatique</td>
                                             <td class="bg-white group-hover:bg-gray-50 border-r border-gray-300 w-[80px]"
                                                 rowspan="3">Unique</td>
                                             <td class="bg-white group-hover:bg-gray-50 border-r border-gray-300 min-w-[200px] whitespace-normal break-words"
                                                 rowspan="3">Matériel complet</td>
 
-                                            <!-- 6 colonnes techniques -->
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td><span class="kt-badge kt-badge-light-info">DRP</span></td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
+                                            <!-- 6 colonnes techniques - rowspan couvre tout le lot -->
+                                            <td class="text-muted-foreground" rowspan="3">-</td>
+                                            <td class="text-muted-foreground" rowspan="3">-</td>
+                                            <td class="text-muted-foreground" rowspan="3">-</td>
+                                            <td rowspan="3"><span class="kt-badge kt-badge-light-info">DRP</span></td>
+                                            <td class="text-muted-foreground" rowspan="3">-</td>
+                                            <td class="text-muted-foreground" rowspan="3">-</td>
 
                                             <!-- Colonne Type de Suivi -->
                                             <td class="border-r">
@@ -773,14 +755,6 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
 
                                         <!-- Ligne 2 : Révisé 1 -->
                                         <tr class="group hover:bg-light/50 relative border-b border-gray-200">
-                                            <!-- 6 colonnes techniques -->
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td><span class="kt-badge kt-badge-light-info">DRP</span></td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-
                                             <!-- Colonne Type de Suivi -->
                                             <td class="border-r">
                                                 <div class="flex items-center gap-2">
@@ -810,15 +784,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                                         </tr>
 
                                         <!-- Ligne 3 : Révisé 2 (dernière ligne du SPM) -->
-                                        <tr class="group hover:bg-light/50 relative border-b-2 border-gray-400">
-                                            <!-- 6 colonnes techniques -->
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td><span class="kt-badge kt-badge-light-info">DRP</span></td>
-                                            <td class="text-muted-foreground">-</td>
-                                            <td class="text-muted-foreground">-</td>
-
+                                        <tr class="group hover:bg-light/50 relative lot-end">
                                             <!-- Colonne Type de Suivi -->
                                             <td class="border-r">
                                                 <div class="flex items-center gap-2">
@@ -1249,6 +1215,23 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
 
 
 
+
+    <script>
+        // Independent row hover for PPM table
+        document.addEventListener('DOMContentLoaded', function() {
+            const table = document.getElementById('ppm-table');
+            if (!table) return;
+            const rows = table.querySelectorAll('tbody tr');
+            rows.forEach(function(row) {
+                row.addEventListener('mouseenter', function() {
+                    this.classList.add('row-hovered');
+                });
+                row.addEventListener('mouseleave', function() {
+                    this.classList.remove('row-hovered');
+                });
+            });
+        });
+    </script>
 </body>
 
 
