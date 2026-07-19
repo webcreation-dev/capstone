@@ -1286,7 +1286,7 @@ License: https://keenthemes.com/metronic/tailwind/docs/getting-started/license
                         for (let el of partials) {
                             const url = el.getAttribute('data-include');
                             try {
-                                const res = await fetch("../../" + url); // Adjust path relative to current URL
+                                const res = await fetch("../../" + url + "?v=" + new Date().getTime()); // Adjust path relative to current URL
                                 if (res.ok) {
                                     el.outerHTML = await res.text();
                                 }
